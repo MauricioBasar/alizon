@@ -1,0 +1,5283 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background: url(../img/fondo.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+    font-size: 10px;
+    min-width: 320px;
+    max-width: 1440px;
+}
+
+.contenedor{
+  width: 98%;
+}
+
+.banner{
+  width: 96%;
+  overflow: hidden;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.banner img{
+  width: 131%;
+}
+
+.banner2{
+  width: 96%;
+  overflow: hidden;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.banner2 img{
+  width: 215%;
+  margin-left: -57%;
+}
+
+
+.banner3{
+  width: 96%;
+  overflow: hidden;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.banner3 img{
+  width:199%;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  display: block;
+}
+
+.cerrartodo{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: none;
+}
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "SLIDER" SE ENCARGA CRISTIAN!!! */
+.slider{
+  width: 100%;
+  position: relative;
+  border: solid 1px #0000008f;
+  box-shadow: 0px 0px 5px #fff;
+  border-radius: 5px;
+  margin: 23% 0 2% 0;
+}
+
+.slider ul li{
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider ul li img{
+  width: 145%;
+  margin-left: -5%;
+  border-radius: 5px;
+}
+
+.slider ol{
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slider ol li{
+  margin: 0;
+  padding: 0 0.3%;
+  color: #7b7b7ab8;
+}
+
+.iconopaginacion{
+  font-size: 200%;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+
+.iconopaginacion:hover{
+  padding-left: 5%;
+  transition: all 0.5s;
+}
+
+.flechaisquierda{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 10%;
+  background: #00000057;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flechaisquierda .left{
+  display: block;
+  font-size: 600%;
+  color: blue;
+  cursor: pointer;
+}
+
+.flechaisquierda .left:hover{
+  padding-left: 20%;
+  color: red;
+  transition: all 0.5s;
+}
+
+.flechaderecha{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 10%;
+  background: #00000057;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flechaderecha .right{
+  display: block;
+  font-size: 600%;
+  color: blue;
+  cursor: pointer;
+}
+
+.flechaderecha .right:hover{
+  padding-right: 20%;
+  color: red;
+  transition: all 0.5s;
+}
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "MENU DE PAGOS" SE ENCARGA CRISTIAN!!! */
+
+.menudepagos{
+  width: 100%;
+  margin-bottom: 2%;
+  background: #7b7b7a5e;
+  border-top: solid 1px red;
+  border: solid 1px red;
+  border-radius: 4px;
+}
+
+.menudepagos ul{
+  width: 100%;
+  display: flex;
+}
+
+.menudepagos ul li{
+  width: 33.333%;
+  padding: 0.3%;
+}
+
+.menudepagos .tarjetas{
+  font-size: 210%;
+  display: flex;
+  margin-top: 3%;
+  margin-bottom: 7%;
+}
+
+.menudepagos .tarjetas .fa-cc-visa{
+  color: white;
+}
+
+.menudepagos .tarjetas .fa-cc-mastercard{
+  color: white;
+}
+
+.menudepagos .tarjetas .fa-cc-amex{
+  color: white;
+}
+
+.menudepagos .tarjetas .fa-cc-paypal{
+  color: white;
+}
+
+.menudepagos .sucursales{
+  font-size: 300%;
+  display: flex;
+  margin-bottom: 0.5%;
+  color: #0000008a;
+}
+
+.menudepagos .envio{
+  font-size: 300%;
+  display: flex;
+  margin-bottom: 0.5%;
+  color: #0000008a;
+}
+
+.menudepagos .avion{
+  font-size: 400%;
+  display: flex;
+  margin-bottom: 0.5%;
+  color: #0000008a;
+}
+
+.menudepagos h2{
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 0.5%;
+  color: white;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.menudepagos p{
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.menudepagos p a{
+  color: #e4cb0a;
+  text-shadow: 1px 1px 8px #000;
+}
+
+
+.menudepagos .beneficios{
+  padding: 2% 0.3% 0 0.3%;
+}
+
+.menudepagos .oculto{
+  display: none;
+}
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "SLIDER 2" SE ENCARGA CRISTIAN!!! */
+
+.slider2contenedor{
+  width: 100%;
+  display: flex;
+  margin: 2% 0;
+}
+
+.ofertas{
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  display: none;
+  background: url(../img/ofertas.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 20%;
+  padding: 7% 5%;
+}
+
+.ofertas h1{
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 3%;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.ofertas h3{
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 20%;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.ofertas p{
+  text-align: center;
+  font-size: 1.7em;
+  margin-bottom: 15%;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.ofertas .botonvermas a{
+  text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 15%;
+  padding: 9%;
+  background: blue;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.ofertas .botonvermas a:hover{
+  font-size: 0.75em;
+  transition: all 0.3s;
+}
+
+.slider2{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #007cff2e;
+  border-top: solid 1px #0165b5 !important;
+  border-bottom: solid 1px #0165b5 !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider2 ul li{
+  width: 100%;
+  float: left;
+  padding: 0 2%;
+}
+
+.slider2 ul li:hover{
+  padding: 0 2.2%;
+  border: solid 1px #ffffff96;
+  border-radius: 3px;
+  background: #00000080;
+  transition: all 0.8s;
+}
+
+.slider2 ul li h1{
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.slider2 ul li h2{
+  text-align: center;
+  font-size: 1.3em;
+  background: #0F7300;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+  border-radius: 3px;
+  padding: 3%;
+  margin: 0 8%;
+}
+
+.slider2 ul li p{
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+  color: red;
+  text-shadow: 1px 1px 1px #000;
+  margin-top: 3%;
+  margin-bottom: 3%;
+
+}
+
+.slider2 ul li img{
+  width: 90%;
+  display: block;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 5px;
+}
+
+.flechaisquierda2{
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-left: solid 1px #0165b5 !important;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flechaisquierda2 .left2{
+  display: block;
+  font-size: 400%;
+  color: blue;
+  cursor: pointer;
+}
+
+.flechaisquierda2 .left2:hover{
+  padding-left: 20%;
+  color: red;
+  transition: all 0.5s;
+}
+
+.flechaderecha2{
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-right: solid 1px #0165b5 !important;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flechaderecha2 .right2{
+  display: block;
+  font-size: 400%;
+  color: blue;
+  cursor: pointer;
+}
+
+.flechaderecha2 .right2:hover{
+  padding-right: 20%;
+  color: red;
+  transition: all 0.5s;
+}
+
+
+
+
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "SLIDER 3" SE ENCARGA CRISTIAN!!! */
+
+
+.slider3{
+  width: 100%;
+  position: relative;
+  border: solid 1px red;
+  border-radius: 4px;
+  margin-bottom: 2%;
+  background: #000000a3;
+}
+
+.slider3 ul{
+  display: flex;
+}
+
+.slider3 ul li{
+  width: 60%;
+}
+
+.slider3 ul li:hover{
+  padding: 0 1%;
+  transition: all 0.5s;
+}
+
+.slider3 ul li h1{
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  color: #fff;
+}
+
+.slider3 ul li h2{
+  text-align: center;
+  font-size: 1.3em;
+  color: #1ec105;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.slider3 ul li img{
+  width: 100%;
+  display: block;
+  margin-top: 3%;
+  border-radius: 50%;
+}
+
+.flechaisquierda3{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fondoflecha3{
+  background: #7b7b7ade;
+  width: 85%;
+  padding: 50% 0;
+  border-radius: 3px;
+}
+
+.flechaisquierda3 .left3{
+  display: block;
+  font-size: 500%;
+  color: blue;
+  cursor: pointer;
+}
+
+.flechaisquierda3 .left3:hover{
+  padding-left: 20%;
+  color: red;
+  transition: all 0.5s;
+}
+
+.flechaderecha3{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flechaderecha3 .right3{
+  display: block;
+  font-size: 500%;
+  color: blue;
+  cursor: pointer;
+}
+
+.flechaderecha3 .right3:hover{
+  padding-right: 20%;
+  color: red;
+  transition: all 0.5s;
+}
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "SECCION 3" SE ENCARGA CRISTIAN!!! */
+
+.seccioncontenedor3{
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.seccioncontenedor3 h1{
+  text-align: center;
+  font-size: 1.8em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+  padding-bottom: 1%;
+  margin-bottom: 2%;
+  border-bottom: solid 1px #ffffff96;
+}
+
+.seccioncontenedor3 ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seccioncontenedor3 ul li{
+  width: 48%;
+}
+
+.seccioncontenedor3 ul li:hover{
+  padding: 0 1%;
+  transition: all 0.5s;
+}
+
+.seccioncontenedor3 ul li img{
+  width: 100%;
+  border-radius: 3px;
+}
+
+.seccioncontenedor3 ul li h2{
+  text-align: center;
+  font-size: 1.4em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.seccioncontenedor3 ul li p{
+  text-align: center;
+  font-size: 1.6em;
+  color: #1ec105;
+  text-shadow: 1px 1px 8px #000;
+  margin-bottom: 2%;
+}
+
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "SLIDER 4" SE ENCARGA CRISTIAN!!! */
+
+.slider4contenedor{
+  width: 100%;
+  display: flex;
+  margin-bottom: 2%;
+}
+
+.ofertas2{
+  display: none;
+  background: url(../img/ofertas2.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 20%;
+  padding: 7% 5%;
+}
+
+.ofertas2 h1{
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10%;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.ofertas2 h3{
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20%;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.ofertas2 p{
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-bottom: 15%;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.ofertas2 .botonvermas2 a{
+  text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 15%;
+  padding: 9%;
+  background: blue;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.ofertas2 .botonvermas2 a:hover{
+  font-size: 0.75em;
+  transition: all 0.3s;
+}
+
+.slider4{
+  border-top: solid 1px red !important;
+  border-bottom: solid 1px red !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #00000085;
+}
+
+.slider4 ul li{
+  width: 100%;
+  float: left;
+  padding: 0 2%;
+}
+
+.slider4 ul li:hover{
+  padding: 0 2.7%;
+  transition: all 0.5s;
+}
+
+.slider4 ul li h1{
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.slider4 ul li h2{
+  text-align: center;
+  font-size: 1.3em;
+  background: #0F7300;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+  border-radius: 3px;
+  padding: 3%;
+  margin: 0 8%;
+}
+
+.slider4 ul li p{
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+  color: red;
+  text-shadow: 1px 1px 8px #000;
+  margin-top: 3%;
+  margin-bottom: 3%;
+
+}
+
+.slider4 ul li img{
+  width: 90%;
+  display: block;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 5px;
+}
+
+.flechaisquierda4{
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-left: solid 1px red !important;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flechaisquierda4 .left4{
+  display: block;
+  font-size: 400%;
+  color: blue;
+  cursor: pointer;
+}
+
+.flechaisquierda4 .left4:hover{
+  padding-left: 20%;
+  color: red;
+  transition: all 0.5s;
+}
+
+.flechaderecha4{
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-right: solid 1px red !important;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flechaderecha4 .right4{
+  display: block;
+  font-size: 400%;
+  color: blue;
+  cursor: pointer;
+}
+
+.flechaderecha4 .right4:hover{
+  padding-right: 20%;
+  color: red;
+  transition: all 0.5s;
+}
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "SECCION" SE ENCARGA CRISTIAN!!! */
+
+.seccioncontenedor{
+  width: 100%;
+  display: flex;
+  margin-bottom: 2%;
+}
+
+.seccionisquierda{
+  margin-left: 0;
+  width: 49.5%;
+}
+
+.seccionisquierda ul li{
+  border: solid 1px #ffffff96;
+  border-radius: 3px;
+  padding: 3%;
+  background: #00000080;
+}
+
+.seccionisquierda ul li:hover{
+  box-shadow: 1px 1px 8px #fff;
+  transition: all 0.5s;
+}
+
+.espacio{
+  margin-bottom: 2%;
+}
+
+.seccionisquierda img{
+  width: 100%;
+  display: block;
+}
+
+.seccionisquierda h1{
+  text-align: center;
+  font-size: 1.3em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+  margin-bottom: 2%;
+}
+
+.seccionisquierda p{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #1ec105;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.seccionderecha{
+  margin-right: 0;
+  width: 49.5%;
+}
+
+.seccionderecha ul li{
+  border: solid 1px #ffffff96;
+  border-radius: 3px;
+  padding: 3%;
+  background: #00000080;
+}
+
+.seccionderecha ul li:hover{
+  box-shadow: 1px 1px 8px #fff;
+  transition: all 0.5s;
+}
+
+.seccionderecha img{
+  width: 100%;
+  display: block;
+}
+
+.seccionderecha h1{
+  text-align: center;
+  font-size: 1.3em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+  margin-bottom: 2%;
+}
+
+.seccionderecha p{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #1ec105;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.seccioncentro{
+  display: none;
+  width: 49%;
+  height: 100%;
+  margin-top: 9%;
+  position: relative;
+  border: solid 1px #ffffff96;
+  border-radius: 4px;
+  background: #00000080;
+}
+
+
+.seccioncentro:hover{
+  box-shadow: 1px 1px 8px #fff;
+  transition: all 0.5s;
+}
+
+.seccioncentro img{
+  width: 100%;
+}
+
+
+.seccioncentro h1{
+  text-align: left;
+  margin-top: 5%;
+  margin-left: 3%;
+  font-size: 1.6em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+  margin-bottom: 2%;
+}
+
+.seccioncentro h3{
+  text-align: left;
+  margin-left: 3%;
+  margin-bottom: 5%;
+  font-size: 1.2em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.seccioncentro .vermas{
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  background: blue;
+  color: #fff;
+  width: 20%;
+  padding: 2.3% 0;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.seccioncentro .vermas:hover{
+  font-size: 1.1em;
+}
+
+
+
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "SLIDER 5" SE ENCARGA CRISTIAN!!! */
+
+.slider5contenedor{
+  width: 100%;
+  display: flex;
+  margin: 2% 0;
+}
+
+.ofertas3{
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  display: none;
+  background: url(../img/ofertas.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 20%;
+  padding: 7% 5%;
+}
+
+.ofertas3 h1{
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 3%;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.ofertas3 h3{
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 20%;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.ofertas3 p{
+  text-align: center;
+  font-size: 1.7em;
+  margin-bottom: 15%;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.ofertas3 .botonvermas3 a{
+  text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 15%;
+  padding: 9%;
+  background: blue;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.ofertas3 .botonvermas3 a:hover{
+  font-size: 0.75em;
+  transition: all 0.3s;
+}
+
+.slider5{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #4630ec40;
+  border-top: solid 1px #351def73 !important;
+  border-bottom: solid 1px #351def73 !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider5 ul li{
+  width: 100%;
+  float: left;
+  padding: 0 2%;
+}
+
+.slider5 ul li:hover{
+  padding: 0 2.2%;
+  border: solid 1px #ffffff96;
+  border-radius: 3px;
+  background: #00000080;
+  transition: all 0.5s;
+}
+
+.slider5 ul li h1{
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.slider5 ul li h2{
+  text-align: center;
+  font-size: 1.3em;
+  background: #0F7300;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+  border-radius: 3px;
+  padding: 3%;
+  margin: 0 8%;
+}
+
+.slider5 ul li p{
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+  color: red;
+  text-shadow: 1px 1px 1px #000;
+  margin-top: 3%;
+  margin-bottom: 3%;
+
+}
+
+.slider5 ul li img{
+  width: 90%;
+  display: block;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 5px;
+}
+
+.flechaisquierda5{
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-left: solid 1px #351def73 !important;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flechaisquierda5 .left5{
+  display: block;
+  font-size: 400%;
+  color: blue;
+  cursor: pointer;
+}
+
+.flechaisquierda5 .left5:hover{
+  padding-left: 20%;
+  color: red;
+  transition: all 0.5s;
+}
+
+.flechaderecha5{
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-right: solid 1px #351def73 !important;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flechaderecha5 .right5{
+  display: block;
+  font-size: 400%;
+  color: blue;
+  cursor: pointer;
+}
+
+.flechaderecha5 .right5:hover{
+  padding-right: 20%;
+  color: red;
+  transition: all 0.5s;
+}
+
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "SECCION 2" SE ENCARGA CRISTIAN!!! */
+
+.seccioncontenedor2{
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.seccionisquierda2{
+  width: 100%;
+  position: relative;
+}
+
+.seccionisquierda2 img{
+  width: 100%;
+  border-radius: 3px;
+}
+
+.seccionisquierda2 h1{
+  background: #ffffff82;
+  width: 100%;
+  text-align: center;
+  font-size: 2.2em;
+  color: #000;
+  text-shadow: 1px 1px 8px #f5c6c6;
+  position: absolute;
+  top: 35%;
+  padding: 1%;
+}
+
+.seccionisquierda2 h3{
+  background: #ffffff82;
+  width: 100%;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 1px 1px 8px #f5c6c6;
+  position: absolute;
+  top: 50%;
+  padding: 1%;
+}
+
+.seccionisquierda2 .seccion2vermas{
+  background: #ffffff82;
+  border: solid 1px #0000006b;
+  width: 30%;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 1px 1px 8px #f5c6c6;
+  position: absolute;
+  top: 65%;
+  left: 35%;
+  padding: 11% 0;
+  border-radius: 50%;
+}
+
+.seccioncentro2{
+  width: 100%;
+  margin-top: 2%;
+}
+
+.seccioncentro2 ul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seccioncentro2 ul li:first-child{
+  width: 70%;
+  margin-bottom: 2%;
+}
+
+.seccioncentro2 ul li{
+  width: 49%;
+  position: relative;
+}
+
+.seccioncentro2 img{
+  width: 100%;
+  border-radius: 3px;
+}
+
+
+.seccioncentro2 h1{
+  position: absolute;
+  top: 15%;
+  left: 3%;
+  text-align: center;
+  font-size: 1.4em;
+  color: #000;
+  text-shadow: 1px 1px 8px #000;
+  margin-bottom: 2%;
+  width: 50%;
+}
+
+.seccioncentro2 h3{
+  position: absolute;
+  top: 67%;
+  left: 3%;
+  text-align: center;
+  font-size: 1.4em;
+  color: #1ec105;
+  text-shadow: 1px 1px 1px #000;
+  margin-bottom: 2%;
+  width: 50%;
+}
+
+.seccionderecha2{
+  display: none;
+  width: 25%;
+}
+
+.seccionderecha2 h1{
+  text-align: center;
+  color: #000;
+  text-shadow: 1px 1px 8px #000;
+  padding: 6% 0;
+}
+
+.seccionderecha2 ul{
+  width: 100%;
+  margin-top: 2%;
+}
+
+.seccionderecha2 ul li{
+  width: 100%;
+  margin-top: 2%;
+  position: relative;
+  background: white;
+  border-radius: 3px;
+}
+
+.seccionderecha2 ul li img{
+  width: 27%;
+  border-radius: 3px;
+}
+
+.seccionderecha2 ul li h1{
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  color: #000;
+  text-shadow: 1px 1px 8px #000;
+  font-size: 1.7em;
+  text-align: center;
+  border-bottom: none;
+}
+
+.seccionderecha2 ul li p{
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  color: #1ec105;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 1.7em;
+  text-align: center;
+  border-bottom: none;
+}
+
+.seccionderecha2 .seccion2vermas2{
+  text-align: center;
+  background: blue;
+  color: #fff;
+  width: 35%;
+  padding: 5% 0;
+  font-size: 1.5em;
+  font-weight:bold;
+  margin-top: 2%;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+
+.seccionderecha2 .seccion2vermas2:hover{
+  font-size: 1.4em;
+}
+
+
+
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "SLIDER 6" SE ENCARGA CRISTIAN!!! */
+
+.slider6contenedor{
+  width: 100%;
+  display: flex;
+  margin-bottom: 2%;
+}
+
+.ofertas4{
+  display: none;
+  background: url(../img/ofertas2.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 20%;
+  padding: 7% 5%;
+}
+
+.ofertas4 h1{
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10%;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.ofertas4 h3{
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20%;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.ofertas4 p{
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-bottom: 15%;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.ofertas4 .botonvermas4 a{
+  text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 15%;
+  padding: 9%;
+  background: blue;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.ofertas4 .botonvermas4 a:hover{
+  font-size: 0.75em;
+  transition: all 0.3s;
+}
+
+.slider6{
+  border-top: solid 1px #ffffff96 !important;
+  border-bottom: solid 1px #ffffff96 !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #7b7b7abf;
+}
+
+.slider6 ul li{
+  width: 100%;
+  float: left;
+  padding: 0 2%;
+}
+
+.slider6 ul li:hover{
+  padding: 0 2.7%;
+  transition: all 0.5s;
+}
+
+.slider6 ul li h1{
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.slider6 ul li h2{
+  text-align: center;
+  font-size: 1.3em;
+  background: #0F7300;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+  border-radius: 3px;
+  padding: 3%;
+  margin: 0 8%;
+}
+
+.slider6 ul li p{
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+  color: red;
+  text-shadow: 1px 1px 1px #000;
+  margin-top: 3%;
+  margin-bottom: 3%;
+
+}
+
+.slider6 ul li img{
+  width: 90%;
+  display: block;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 5px;
+}
+
+.flechaisquierda6{
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-left: solid 1px #ffffff96 !important;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flechaisquierda6 .left6{
+  display: block;
+  font-size: 400%;
+  color: blue;
+  cursor: pointer;
+}
+
+.flechaisquierda6 .left6:hover{
+  padding-left: 20%;
+  color: red;
+  transition: all 0.5s;
+}
+
+.flechaderecha6{
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-right: solid 1px #ffffff96 !important;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flechaderecha6 .right6{
+  display: block;
+  font-size: 400%;
+  color: blue;
+  cursor: pointer;
+}
+
+.flechaderecha6 .right6:hover{
+  padding-right: 20%;
+  color: red;
+  transition: all 0.5s;
+}
+
+
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "SLIDER 7" SE ENCARGA CRISTIAN!!! */
+
+.slider7contenedor{
+  width: 100%;
+  margin-top: 2%;
+}
+
+.ofertas5{
+  background: url(../img/ofertas.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 1%;
+  display: flex;
+  border-top: solid 1px red;
+  border-left: solid 1px red;
+  border-right: solid 1px red;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.ofertas5 h1{
+  width: 70%;
+  margin-top: 2%;
+  text-align: center;
+  font-size: 1.3em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.ofertas5 .botonvermas5{
+  width: 30%;
+}
+
+.ofertas5 .botonvermas5 a{
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 5%;
+  background: blue;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.ofertas5 .botonvermas5 a:hover{
+  font-size: 1.2em;
+  transition: all 0.3s;
+}
+
+.slider7{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-right: solid 1px #000;
+  border-left: solid 1px #000;
+  border-bottom: solid 1px #000;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-image: url(../img/slider7fondo.webp);
+  background-size: cover;
+}
+
+.slider7 ul li{
+  width: 50%;
+  float: left;
+  padding: 0 0.5%;
+}
+
+.slider7 ul li:hover{
+  padding: 0 0.8%;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+
+.slider7 ul li h1{
+  text-align: center;
+  font-size: 1.3em;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.slider7 ul li h2{
+  text-align: center;
+  font-size: 1.2em;
+  background: #0F7300;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+  border-radius: 3px;
+  padding: 3%;
+  margin: 0 8%;
+}
+
+.slider7 ul li p{
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: bold;
+  color: red;
+  text-shadow: 1px 1px 1px #000;
+  margin-top: 3%;
+  margin-bottom: 3%;
+
+}
+
+.slider7 ul li img{
+  width: 100%;
+  display: block;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  border-radius: 5px;
+}
+
+.flechaisquierda7{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flechaisquierda7 .left7{
+  display: block;
+  font-size: 400%;
+  color: blue;
+  cursor: pointer;
+}
+
+.flechaisquierda7 .left7:hover{
+  padding-left: 20%;
+  color: red;
+  transition: all 0.5s;
+}
+
+.flechaderecha7{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flechaderecha7 .right7{
+  display: block;
+  font-size: 400%;
+  color: blue;
+  cursor: pointer;
+}
+
+.flechaderecha7 .right7:hover{
+  padding-right: 20%;
+  color: red;
+  transition: all 0.5s;
+}
+
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "SLIDER 8" SE ENCARGA CRISTIAN!!! */
+
+
+.slider8{
+  width: 100%;
+  position: relative;
+  border: solid 1px red;
+  border-radius: 4px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background: #000000a3;
+}
+
+.slider8 ul{
+  display: flex;
+}
+
+.slider8 ul li{
+  width: 60%;
+}
+
+.slider8 ul li:hover{
+  padding: 0 1%;
+  transition: all 0.5s;
+}
+
+.slider8 ul li h1{
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  color: #fff;
+}
+
+.slider8 ul li h2{
+  text-align: center;
+  font-size: 1.3em;
+  color: #1ec105;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.slider8 ul li img{
+  width: 100%;
+  display: block;
+  margin-top: 3%;
+  border-radius: 50%;
+}
+
+.flechaisquierda8{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fondoflecha8{
+  background: #7b7b7ade;
+  width: 85%;
+  padding: 50% 0;
+  border-radius: 3px;
+}
+
+.flechaisquierda8 .left8{
+  display: block;
+  font-size: 500%;
+  color: blue;
+  cursor: pointer;
+}
+
+.flechaisquierda8 .left8:hover{
+  padding-left: 20%;
+  color: red;
+  transition: all 0.5s;
+}
+
+.flechaderecha8{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flechaderecha8 .right8{
+  display: block;
+  font-size: 500%;
+  color: blue;
+  cursor: pointer;
+}
+
+.flechaderecha8 .right8:hover{
+  padding-right: 20%;
+  color: red;
+  transition: all 0.5s;
+}
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "MENU DERECHO (ASIDE)" SE ENCARGA CRISTIAN!!! */
+
+.menuizquierdo{
+  width: 22%;
+  border: solid 1px #ffffff96;
+  border-radius: 4px;
+  padding: 1%;
+  background: #401a0eb3;
+  display: none;
+  margin: 2% 1% 3.5% 1%;
+}
+
+.menuizquierdo h3{
+  font-size: 2.1em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+  margin-bottom: 5%;
+}
+
+.menuizquierdo .categorias{
+  margin-bottom: 20%;
+}
+
+.menuizquierdo .categorias ul{
+  width: 100%;
+}
+
+.menuizquierdo .categorias ul li{
+  margin-bottom: 5%;
+}
+
+.menuizquierdo .categorias ul li a{
+  font-size: 1.6em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.menuizquierdo .categorias ul li a:hover{
+  font-size: 1.55em;
+  color: #00BCD4;
+  text-shadow: 9px 0px 5px #000;
+  transition: all 0.5s;
+}
+
+.menuizquierdo .filtrarcategorias h4{
+  font-size: 1.8em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+  margin-bottom: 5%;
+}
+
+.menuizquierdo .filtrarcategorias ul{
+  margin-bottom: 20%;
+}
+
+.menuizquierdo .filtrarcategorias ul li{
+  margin-bottom: 5%;
+  display: flex;
+}
+
+.menuizquierdo .filtrarcategorias ul li input{
+  margin-left: 0;
+  width: 5%;
+  margin-top: 1.2%;
+}
+
+.menuizquierdo .filtrarcategorias ul li a{
+  text-align: left;
+  width: 92%;
+  font-size: 1.6em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.menuizquierdo .filtrarcategorias ul li a:hover{
+  font-size: 1.55em;
+  color: #00BCD4;
+  text-shadow: 9px 0px 5px #000;
+  transition: all 0.5s;
+}
+
+.menuizquierdo .filtrarportarjetas ul{
+  margin-bottom: 20%;
+}
+
+.menuizquierdo .filtrarportarjetas ul li{
+  margin-bottom: 5%;
+  display: flex;
+}
+
+.menuizquierdo .filtrarportarjetas ul li input{
+  margin-left: 0;
+  width: 5%;
+  margin-top: 1.2%;
+}
+
+.menuizquierdo .filtrarportarjetas ul li a{
+  text-align: left;
+  width: 92%;
+  font-size: 1.6em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.menuizquierdo .filtrarportarjetas ul li a:hover{
+  font-size: 1.55em;
+  color: #00BCD4;
+  text-shadow: 9px 0px 5px #000;
+  transition: all 0.5s;
+}
+
+.menuizquierdo .filtrarporpromociones ul{
+  margin-bottom: 20%;
+}
+
+.menuizquierdo .filtrarporpromociones ul li{
+  margin-bottom: 5%;
+  display: flex;
+}
+
+.menuizquierdo .filtrarporpromociones ul li input{
+  margin-left: 0;
+  width: 5%;
+  margin-top: 1.2%;
+}
+
+.menuizquierdo .filtrarporpromociones ul li a{
+  text-align: left;
+  width: 92%;
+  font-size: 1.6em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.menuizquierdo .filtrarporpromociones ul li a:hover{
+  font-size: 1.55em;
+  color: #00BCD4;
+  text-shadow: 9px 0px 5px #000;
+  transition: all 0.5s;
+}
+
+.menuizquierdo .filtrarpordescuentos ul{
+  margin-bottom: 20%;
+}
+
+.menuizquierdo .filtrarpordescuentos ul li{
+  margin-bottom: 5%;
+  display: flex;
+}
+
+.menuizquierdo .filtrarpordescuentos ul li input{
+  margin-left: 0;
+  width: 5%;
+  margin-top: 1.2%;
+}
+
+.menuizquierdo .filtrarpordescuentos ul li a{
+  text-align: left;
+  width: 92%;
+  font-size: 1.6em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.menuizquierdo .filtrarpordescuentos ul li a:hover{
+  font-size: 1.55em;
+  color: #00BCD4;
+  text-shadow: 9px 0px 5px #000;
+  transition: all 0.5s;
+}
+
+.menuizquierdo .precio ul{
+  margin-bottom: 20%;
+}
+
+.menuizquierdo .precio ul li{
+  width: 100%;
+}
+
+.menuizquierdo .precio ul li input{
+  width: 100%;
+}
+
+.menuizquierdo .precio ul li ul{
+  display: flex;
+  margin-top: 5%;
+}
+
+.menuizquierdo .precio ul li ul li{
+  width: 25%;
+}
+
+.menuizquierdo .precio ul li ul li p{
+  font-size: 1.6em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+  margin-bottom: 3%;
+}
+
+.menuizquierdo .precio ul li ul li input{
+  padding: 15% 5%;
+  border-radius: 4px;
+}
+
+.menuizquierdo .precio ul li ul li button{
+  width: 100%;
+  height: 67%;
+  margin-top: 33%;
+  font-size: 2em;
+  font-weight: bold;
+  color: #000;
+  border-radius: 4px;
+}
+
+
+.menuizquierdo .calificaciones ul{
+  margin-bottom: 20%;
+}
+
+.menuizquierdo .calificaciones ul li{
+  margin-bottom: 5%;
+  display: flex;
+}
+
+.menuizquierdo .calificaciones ul li input{
+  margin-left: 0;
+  width: 5%;
+  margin-top: 2.5%;
+}
+
+.menuizquierdo .calificaciones ul li a{
+  text-align: left;
+  width: 92%;
+  font-size: 1.6em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.menuizquierdo .calificaciones ul li a:hover{
+  font-size: 1.55em;
+  color: #00BCD4;
+  text-shadow: 9px 0px 5px #000;
+  transition: all 0.5s;
+}
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "ARTICULOS" SE ENCARGA CRISTIAN!!! */
+
+.articulos{
+  width: 100%;
+  margin: 2% 0;
+}
+
+.articulos .articulo{
+  width: 100%;
+  border: solid 1px #00ff0970;
+  background: #0000007a;
+  border-radius: 4px;
+  margin-bottom: 2%;
+}
+
+.articulos .articulo:hover{
+  padding: 0 2.2%;
+  border: solid 1px #ffffff96;
+  border-radius: 3px;
+  background: #00000080;
+  transition: all 0.5s;
+}
+
+.articulos .articulo a{
+  display: flex;
+}
+
+.articulos .articulo a .cuotayimagen{
+  width: 60%;
+}
+
+.articulos .articulo a .cuotayimagen h2{
+  text-align: center;
+  font-size: 1.3em;
+  background: #0F7300;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+  border-radius: 3px;
+  padding: 3%;
+}
+
+.articulos .articulo a .cuotayimagen img{
+  width: 100%;
+}
+
+.articulos .articulo a .tituloyprecio{
+  width: 40%;
+  padding: 25% 0;
+}
+
+.articulos .articulo a .tituloyprecio h1{
+  text-align: center;
+  font-size: 1.2em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+  margin-bottom: 10%;
+}
+
+.articulos .articulo a .tituloyprecio p{
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #1ec105;
+  text-shadow: 1px 1px 1px #000;
+}
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "FOOTER" SE ENCARGA CRISTIAN!!! */
+
+.footer{
+  width: 100%;
+  margin-top: 2%;
+  background: #1b1a1a96;
+  border: solid 1px #ffffff96;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.footerparte1{
+  width: 100%;
+}
+
+.footerparte1 ul{
+  width: 100%;
+}
+
+.footerparte1 ul li{
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.footerparte1 ul li h1{
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.footerparte1 ul li input{
+  width: 90%;
+  margin-left: 5%;
+  padding: 1%;
+  border-radius: 4px;
+  box-shadow: 1px 1px 8px blue;
+}
+
+.footerparte1 ul li button{
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 4px;
+  margin-top: 4%;
+  color: red;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+  padding: 1%;
+}
+
+
+.footerparte1 ul li ul{
+  width: 100%;
+  display: flex;
+  margin-top: 10%;
+}
+
+.footerparte1 ul li ul li{
+  width: 20%;
+  text-align: center;
+  font-size: 3.5em;
+}
+
+.footerparte1 ul li ul li a{
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+.footerparte2{
+  display: none;
+}
+
+.footerparte3{
+  display: none;
+}
+
+.footerparte4 ul li p, .footerparte4 ul li .ayuda, .footerparte4 ul li ul{
+  display: none;
+}
+
+.footerparte4 ul li h4{
+  text-align: center;
+  font-size: 1.7em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+
+.footerparte4 ul li .legal{
+  margin-top: 2%;
+  text-align: center;
+  font-size: 1.6em;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+}
+
+/* WARNING: TODOS LOS ESTILOS DEL "MENU IZQUIERDO FIXED" SE ENCARGA CRISTIAN!!! */
+
+.menuizquierdofixed{
+  width: 80%;
+  height: 100%;
+  border: solid 1px red;
+  background: #271919;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  z-index: 3;
+  overflow: scroll;
+}
+
+.menuizquierdofixed .bienvenidofixed{
+  width: 100%;
+  background: red;
+  padding: 2% 5%;
+}
+
+.menuizquierdofixed .bienvenidofixed .iconomenufixedcerrar{
+  font-size: 3em;
+  text-align: right;
+}
+
+.menuizquierdofixed .bienvenidofixed .iconomenufixedcerrar:hover{
+  font-size: 2.8em;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.menuizquierdofixed .bienvenidofixed h3{
+  font-size: 2.5em;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.menuizquierdofixed .bienvenidofixed .icononopersona{
+  font-size: 10em;
+  width: 42%;
+  display: block;
+}
+
+.menuizquierdofixed .bienvenidofixed h6{
+  font-size: 1.4em;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 5%;
+}
+
+.menuizquierdofixed span p{
+  font-size: 1.4em;
+  color: #cc4848;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2%;
+  background: #bbb5b5;
+  text-shadow: 1px 1px 1px #000;
+  padding: 5% 0;
+  border-radius: 4px;
+  box-shadow: 1px 1px 8px #000;
+  cursor: pointer;
+}
+
+.menuizquierdofixed span p:hover{
+  font-size: 1.37em;
+  box-shadow: inset 1px 1px 8px #000;
+  transition: all 0.3s;
+}
+
+.menuizquierdofixed .categoriasfixed{
+  padding: 5%;
+  width: 100%;
+  font-size: 2em;
+}
+
+.menuizquierdofixed .categoriasfixed ul li{
+  margin-bottom: 8%;
+}
+
+.menuizquierdofixed .categoriasfixed ul li:nth-child(2){
+  padding-bottom: 8%;
+  border-bottom: 1px solid #00000057;
+}
+
+.menuizquierdofixed .categoriasfixed ul li:nth-child(5){
+  padding-bottom: 8%;
+  border-bottom: 1px solid #00000057;
+}
+
+.menuizquierdofixed .categoriasfixed ul li:nth-child(9){
+  padding-bottom: 8%;
+  border-bottom: 1px solid #00000057;
+}
+
+.menuizquierdofixed .categoriasfixed ul li span{
+  margin-right: 5%;
+}
+
+.menuizquierdofixed .categoriasfixed ul li a{
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "HEADER" SE ENCARGA AGUSTIN!!! */
+
+
+.header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background: #ff0000c2;
+}
+
+.header .headerparte1{
+  width: 100%;
+  display: none;
+}
+
+.header .headerparte1 ul{
+  width: 100%;
+  display: flex;
+}
+
+.header .headerparte1 ul li{
+  width: 11%;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.header .headerparte1 ul li:hover{
+  background: blue;
+  font-size: 1.4em;
+  transition: all 0.8s;
+}
+
+.header .headerparte1 ul li a{
+  padding: 5% 0;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.header .headerparte1 ul li a span{
+  padding-right: 4%;
+}
+
+.header .headerparte1 ul li:nth-child(-n+8){
+  border-right: solid 1px #000;
+}
+
+
+
+.header .headerparte3{
+  width: 100%;
+  display: none;
+}
+
+.header .headerparte3 ul{
+  width: 100%;
+  display: flex;
+  font-size: 1.5em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.header .headerparte3 ul li a{
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.header .headerparte3 ul li a:hover{
+  color: #000000db;
+  transition: all 0.8s;
+}
+
+.header .headerparte3 ul li ul{
+  display: block;
+  font-size: 0.95em;
+  border: solid 1px #000;
+  border-radius: 4px;
+  background: #000000db;
+  margin-top: 1%;
+  position: absolute;
+  z-index: 1;
+  width: 20%;
+}
+
+.header .headerparte3 ul li ul li{
+  padding: 5% 0 5% 5%;
+}
+
+.header .headerparte3 ul .iconomasgrande{
+  font-size: 2.2em;
+  margin-top: -0.1%;
+}
+
+.header .headerparte3 ul .iconomasgrande{
+  font-size: 2.2em;
+  margin-top: -0.1%;
+}
+
+.header .headerparte3 ul li ul li:hover{
+  background: red;
+  border-radius: 4px;
+  font-size: 0.90em;
+  transition: all 0.8s;
+}
+
+
+
+.header .headerparte3 ul li{
+  margin-top: 1%;
+  margin-bottom: 0.3%;
+}
+
+.header .headerparte2 ul li h3{
+  display: none;
+}
+
+.header .headerparte2{
+  width: 100%;
+  padding-top: 3.5%;
+  padding-left: 1.5%;
+}
+
+.header .headerparte2 ul{
+  width: 100%;
+  display: flex;
+}
+
+.header .headerparte2 ul li:hover{
+  color: #fff;
+  transition: all 0.8s;
+}
+
+.header .headerparte2 ul li:nth-child(1){
+  width: 13%;
+  font-size: 4em;
+  cursor: pointer;
+}
+
+.header .headerparte2 ul li:nth-child(2){
+  width: 55%;
+}
+
+.header .headerparte2 ul li:nth-child(3){
+  width: 13%;
+  font-size: 4em;
+}
+
+.header .headerparte2 ul li:nth-child(4){
+  display: none;
+  width: 50%;
+  margin-right: 2%;
+}
+
+.header .headerparte2 ul li input{
+  border-radius: 10px;
+  padding: 3% 2%;
+}
+
+.header .headerparte2 ul li:nth-child(5){
+  width: 13%;
+  font-size: 4em;
+}
+
+.header .headerparte2 ul li .logo{
+  width: 100%;
+}
+
+.header .headerparte2 ul li .logo img{
+  width: 100%;
+}
+
+.header .headerparte2 ul li input{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "formulario de registro" SE ENCARGA TATIANA!!! */
+
+.registro{
+  padding: 1%;
+  width: 90%;
+  background-color: #5150fdde;
+  border: solid 1px black;
+  z-index: 3;
+  position: absolute;
+  left: 5%;
+  top: -5000%;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  display: flex;
+  border-radius: 5px;
+}
+
+
+
+.registroprimeraparte{
+  width: 100%;
+  border: solid 1px white;
+  padding: 2%;
+  border-radius: 3px;
+}
+
+.registroprimeraparte .iconoregistrocerrar{
+  font-size: 2em;
+  text-align: right;
+  margin-bottom: 2%;
+}
+
+.registroprimeraparte .iconoregistrocerrar:hover{
+  font-size: 1.8em;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.registroprimeraparte .titulo{
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 2% 0;
+  text-shadow: 1px 1px 1px #000;
+  widows: 100%;
+  margin-bottom: 5%;
+  border: solid 1px red;
+  border-radius: 4px;
+  background: red;
+}
+
+.registrasegundaparte{
+  border: solid 1px white;
+  border-radius: 3px;
+  width: 50%;
+  padding: 2%;
+  margin-left:2%;
+  display: none;
+}
+
+.registrasegundaparte h1{
+  font-size: 1.3em;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.registrasegundaparte img{
+  margin-bottom: 10%;
+  width: 60%;
+  display: block;
+}
+
+.registrasegundaparte p{
+  font-size: 1.2em;
+}
+
+.registro ul li{
+  margin-bottom: 2%;
+}
+
+.registro ul li input{
+  width: 100%;
+  padding: 2% 2%;
+  border-radius: 4px;
+  margin-top: 1%;
+}
+
+.registro button{
+  width: 50%;
+  margin-top: 10%;
+  display: block;
+  font-family: sans-serif;
+  color: black;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 3% 0;
+  background: red;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.registroprimeraparte p{
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.registroprimeraparte p .o {
+  margin: 0 2%;
+  margin-top: 10%;
+  color: red;
+}
+
+.registroprimeraparte .segundo{
+  width: 100%;
+  padding: 3% 0;
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px #000;
+  border: solid 1px blue;
+  text-shadow: 1px 1px 8px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* WARNING: TODOS LOS ESTILOS DEL "CENTRO DE AYUDA" SE ENCARGA JONAS!!! */
+
+.centrodeayudacontenedor{
+  margin-top: 22%;
+  width: 100%;
+  padding: 2%;
+  border: solid 1px #fff126;
+  background: #0a0000d9;
+  border-radius: 5px;
+}
+
+.centrodeayudacontenedor h1{
+  font-size: 1.4em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  margin-bottom: 5%;
+}
+
+.centrodeayudacontenedor h2{
+  font-size: 1.3em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  margin-bottom: 5%;
+}
+
+.centrodeayudacontenedor .lomasconsultado{
+  width: 100%;
+  padding: 4%;
+}
+
+.centrodeayudacontenedor .lomasconsultado ul{
+  width: 100%;
+}
+
+.centrodeayudacontenedor .lomasconsultado ul li{
+  width: 100%;
+  margin-bottom: 5%;
+  border: solid 1px red;
+  border-radius: 4px;
+}
+
+.centrodeayudacontenedor .lomasconsultado ul li a{
+  padding: 8% 2%;
+  text-align: center;
+  font-size: 1.4em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  background: #2b1904;
+  border-radius: 4px;
+}
+
+.centrodeayudacontenedor .lomasconsultado ul li a:hover{
+  background: #04272b;
+  transition: all 0.8s;
+}
+
+.centrodeayudacontenedor .centrodeayuda{
+  width: 100%;
+  padding: 4%;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul{
+  width: 100%;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li{
+  width: 100%;
+  margin-bottom: 5%;
+  border: solid 1px red;
+  border-radius: 4px;
+  padding: 8%;
+  text-align: center;
+  background: #401a0e;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .compras{
+  width: 100%;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .compras .comprasicono{
+  font-size: 4em;
+  margin-bottom: 2%;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .compras ul{
+  width: 100%;
+  margin: 10% 0;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .compras ul li{
+  width: 100%;
+  list-style: circle;
+  border: none;
+  margin-bottom: 5%;
+  padding: 0;
+  font-size: 1.4em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .compras ul li a{
+  text-align: left;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .compras .masinfo{
+  text-align: center;
+  font-size: 1.7em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+
+.centrodeayudacontenedor .centrodeayuda ul li .pagos{
+  width: 100%;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .pagos .pagosicono{
+  font-size: 4em;
+  margin-bottom: 2%;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .pagos ul{
+  width: 100%;
+  margin: 10% 0;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .pagos ul li{
+  width: 100%;
+  list-style: circle;
+  border: none;
+  margin-bottom: 5%;
+  padding: 0;
+  font-size: 1.4em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .pagos ul li a{
+  text-align: left;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .pagos .masinfo{
+  text-align: center;
+  font-size: 1.7em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .entregas{
+  width: 100%;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .entregas .entregasicono{
+  font-size: 4em;
+  margin-bottom: 2%;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .entregas ul{
+  width: 100%;
+  margin: 10% 0;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .entregas ul li{
+  width: 100%;
+  list-style: circle;
+  border: none;
+  margin-bottom: 5%;
+  padding: 0;
+  font-size: 1.4em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .entregas ul li a{
+  text-align: left;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .entregas .masinfo{
+  text-align: center;
+  font-size: 1.7em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .sucursales{
+  width: 100%;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .sucursales .sucursalesicono{
+  font-size: 4em;
+  margin-bottom: 2%;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .sucursales ul{
+  width: 100%;
+  margin: 10% 0;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .sucursales ul li{
+  width: 100%;
+  list-style: circle;
+  border: none;
+  margin-bottom: 5%;
+  padding: 0;
+  font-size: 1.4em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .sucursales ul li a{
+  text-align: left;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .sucursales .masinfo{
+  text-align: center;
+  font-size: 1.7em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+
+.centrodeayudacontenedor .centrodeayuda ul li .garantias{
+  width: 100%;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .garantias .garantiasicono{
+  font-size: 4em;
+  margin-bottom: 2%;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .garantias ul{
+  width: 100%;
+  margin: 10% 0;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .garantias ul li{
+  width: 100%;
+  list-style: circle;
+  border: none;
+  margin-bottom: 5%;
+  padding: 0;
+  font-size: 1.4em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .garantias ul li a{
+  text-align: left;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .garantias .masinfo{
+  text-align: center;
+  font-size: 1.7em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+
+.centrodeayudacontenedor .centrodeayuda ul li .cambios{
+  width: 100%;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .cambios .cambiosicono{
+  font-size: 4em;
+  margin-bottom: 2%;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .cambios ul{
+  width: 100%;
+  margin: 10% 0;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .cambios ul li{
+  width: 100%;
+  list-style: circle;
+  border: none;
+  margin-bottom: 5%;
+  padding: 0;
+  font-size: 1.4em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .cambios ul li a{
+  text-align: left;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.centrodeayudacontenedor .centrodeayuda ul li .cambios .masinfo{
+  text-align: center;
+  font-size: 1.7em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+
+.centrodeayudacontenedor .preguntasfrecuentes{
+  width: 100%;
+  padding: 4%;
+  background: #401a0e;
+  border: solid 1px red;
+  border-radius: 4px;
+  margin-bottom: 3%;
+}
+
+.centrodeayudacontenedor .preguntasfrecuentes .preguntas{
+  width: 100%;
+}
+
+.centrodeayudacontenedor .preguntasfrecuentes .preguntas ul{
+  width: 100%;
+  margin: 10% 0;
+}
+
+.centrodeayudacontenedor .preguntasfrecuentes .preguntas ul li{
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.centrodeayudacontenedor .preguntasfrecuentes .preguntas ul li a{
+  width: 100%;
+  text-align: left;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 1.4em;
+}
+
+
+.centrodeayudacontenedor .preguntasfrecuentes .preguntasresultado{
+  width: 100%;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.centrodeayudacontenedor .preguntasfrecuentes .preguntasresultado details{
+  width: 100%;
+  font-size: 1.4em;
+}
+
+.centrodeayudacontenedor .preguntasfrecuentes .preguntasresultado details summary{
+  width: 100%;
+  margin: 5% 0 5% 0;
+}
+
+
+.centrodeayudacontenedor .contacteconnosotros{
+  width: 100%;
+  padding: 4%;
+}
+
+.centrodeayudacontenedor .contacteconnosotros h3{
+  font-size: 1.4em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  margin-bottom: 5%;
+}
+
+.centrodeayudacontenedor .contacteconnosotros ul{
+  width: 100%;
+}
+
+.centrodeayudacontenedor .contacteconnosotros ul li{
+  width: 100%;
+  margin-bottom: 5%;
+  border: solid 1px red;
+  border-radius: 4px;
+  text-align: center;
+  background: #401a0e;
+}
+
+.centrodeayudacontenedor .contacteconnosotros ul li .consultasicono{
+  font-size: 4em;
+  margin-top: 3%;
+}
+
+.centrodeayudacontenedor .contacteconnosotros ul li .reclamosicono{
+  font-size: 4em;
+  margin-top: 3%;
+}
+
+.centrodeayudacontenedor .contacteconnosotros ul li .sugerenciasicono{
+  font-size: 4em;
+  margin-top: 3%;
+}
+
+.centrodeayudacontenedor .lomasconsultado ul li a{
+  padding: 8% 2%;
+  text-align: center;
+  font-size: 1.4em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+
+  /* WARNING: TODOS LOS ESTILOS DEL "FORMULARIO DE SESION" SE ENCARGA CRISTIAN!!! */
+
+
+.sesion{
+  border: solid 1px #ff26266e;
+  width: 90%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  border-radius: 2%;
+  background: #0000008a;
+  position: absolute;
+  top: -5000%;
+  z-index: 3;
+  margin-left: 5%;
+  background: #000000e8;
+}
+
+.sesion .iconosesioncerrar{
+  font-size: 2.5em;
+  text-align: right;
+  margin-bottom: 1%;
+  margin-right: 2%;
+  margin-top: 1%;
+  color: red;
+}
+
+.sesion .iconosesioncerrar:hover{
+  font-size: 2.2em;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.sesion h1{
+  font-size: 1.7em;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-bottom: solid 0.8px #ff26266e;
+  text-align: center;
+  padding: 5%;
+  margin-bottom: 3%;
+  border-radius: 3%;
+  background: #454aea;
+}
+
+.sesion h2{
+  font-size: 1.7em;
+  width: 50%;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border: solid 1px #ff26266e;
+  text-align: center;
+  padding: 2%;
+  margin-bottom: 3%;
+  border-radius: 3%;
+  background: #454aea;
+}
+
+.sesion h2:hover{
+  background: #8500ff6e;
+}
+
+.sesion2{
+  width: 90%;
+  margin-bottom: 5%;
+}
+
+.sesion2 ul li{
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+.sesion2 input{
+  display: block;
+  border: solid 1.2px #8326ff63;
+  border-radius: 5%;
+  background: #02136759;
+  color: #fff;
+  width: 80%;
+  padding: 2%;
+}
+
+.sesion2 input:hover{
+  width: 84%;
+  background: #8500ff6e;
+}
+
+.sesion2 button:hover{
+  background: #8500ff6e;
+}
+
+.sesion2 button{
+  display: block;
+  border: solid 0.8px #8326ff63;
+  width: 40%;
+  padding: 10px;
+  border-radius: 3%;
+  background: #454aea;
+  color: #fff;
+}
+
+.sesion2 p{
+  width: 58%;
+  display: flex;
+  border: solid 1px red;
+  border-radius: 3px;
+  background: #7b7b7a;
+  padding: 1%;
+}
+
+.sesion2 p .recordar{
+  width: 10%;
+  margin-top: 2.1%;
+}
+
+.sesion2 p span{
+  font-size: 1.5em;
+  width: 90%;
+  color: #000;
+  text-shadow: 0.5px 0.5px 1px #fff;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/* WARNING: MEDIA QUERIES PARA HACER RESPONSIVE LA PAGINA */
+
+@media (min-width: 375px) {
+
+  .menuizquierdofixed .bienvenidofixed .icononopersona{
+    font-size: 10em;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "HEADER" SE ENCARGA AGUSTIN!!! */
+
+
+  .header .headerparte2{
+    padding-top: 2%;
+    padding-left: 5%;
+  }
+
+  .header .headerparte2 ul li:nth-child(2){
+    width: 50%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER" SE ENCARGA CRISTIAN!!! */
+
+  .slider{
+    margin: 19% 0 2% 0;
+  }
+
+  .flechaderecha .right:hover{
+    padding-right: 10%;
+  }
+
+  .flechaisquierda .left:hover{
+    padding-left: 10%;
+  }
+
+  /* WARNING: STILOS DEL "MENU DE PAGOS" SE ENCARGA CRISTIAN!!! */
+
+  .menudepagos .tarjetas{
+    font-size: 250%;
+    margin-top: 1%;
+    margin-bottom: 3.5%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 2" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha2 .right2:hover{
+    padding-right: 10%;
+  }
+
+  .flechaisquierda2 .left2:hover{
+    padding-left: 10%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 3" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha3 .right3:hover{
+    padding-right: 10%;
+  }
+
+  .flechaisquierda3 .left3:hover{
+    padding-left: 10%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 4" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha4 .right4:hover{
+    padding-right: 10%;
+  }
+
+  .flechaisquierda4 .left4:hover{
+    padding-left: 10%;
+  }
+
+  /* WARNING: STILOS DEL "SECCION" SE ENCARGA CRISTIAN!!! */
+
+  .seccionderecha h1{
+    font-size: 1.5em;
+  }
+
+  .seccionderecha p{
+    font-size: 1.6em;
+  }
+
+  .seccionisquierda h1{
+    font-size: 1.5em;
+  }
+
+  .seccionisquierda p{
+    font-size: 1.6em;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 5" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha5 .right5:hover{
+    padding-right: 10%;
+  }
+
+  .flechaisquierda5 .left5:hover{
+    padding-left: 10%;
+  }
+
+  /* WARNING: STILOS DEL "SECCION 2" SE ENCARGA CRISTIAN!!! */
+
+  .seccioncentro2 h1{
+    width: 45%;
+  }
+
+  .seccioncentro2 h3{
+    left: 0;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 6" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha6 .right6:hover{
+    padding-right: 10%;
+  }
+
+  .flechaisquierda6 .left6:hover{
+    padding-left: 10%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 7" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha7 .right7:hover{
+    padding-right: 10%;
+  }
+
+  .flechaisquierda7 .left7:hover{
+    padding-left: 10%;
+  }
+
+  .ofertas5 h1{
+    margin-top: 1.7%;
+    font-size: 1.4em;
+  }
+
+  .ofertas5 .botonvermas5 a{
+    font-size: 1.4em;
+  }
+
+  .ofertas5 .botonvermas5 a:hover{
+    font-size: 1.3em;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 8" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha8 .right8:hover{
+    padding-right: 10%;
+  }
+
+  .flechaisquierda8 .left8:hover{
+    padding-left: 10%;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "MENU IZQUIERDO FIXED" SE ENCARGA CRISTIAN!!! */
+
+  .menuizquierdofixed{
+    width: 75%;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "CENTRO DE AYUDA" SE ENCARGA JONAS!!! */
+
+  .centrodeayudacontenedor{
+    margin-top: 18.5%;
+  }
+
+  .centrodeayudacontenedor h1{
+    font-size: 1.6em;
+    margin-bottom: 3%;
+  }
+
+  .centrodeayudacontenedor h2{
+    font-size: 1.4em;
+    margin-bottom: 3%;
+  }
+
+  .centrodeayudacontenedor .lomasconsultado{
+    padding: 1%;
+  }
+
+  .centrodeayudacontenedor .lomasconsultado ul li{
+    margin-bottom: 3%;
+  }
+
+  .centrodeayudacontenedor .lomasconsultado ul li a{
+    padding: 6% 1%;
+    font-size: 1.5em;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda{
+    padding: 1%;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li{
+    margin-bottom: 3% !important;
+    padding: 7%;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .compras ul{
+    margin: 7% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .compras ul li{
+    margin-bottom: 3% !important;
+    font-size: 1.6em;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .pagos ul{
+    margin: 7% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .pagos ul li{
+    margin-bottom: 3% !important;
+    font-size: 1.6em;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .entregas ul{
+    margin: 7% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .entregas ul li{
+    margin-bottom: 3% !important;
+    font-size: 1.6em;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .sucursales ul{
+    margin: 7% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .sucursales ul li{
+    margin-bottom: 3% !important;
+    font-size: 1.6em;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .garantias ul{
+    margin: 7% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .garantias ul li{
+    margin-bottom: 3% !important;
+    font-size: 1.6em;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .cambios ul{
+    margin: 7% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .cambios ul li{
+    margin-bottom: 3% !important;
+    font-size: 1.6em;
+  }
+
+
+
+  .centrodeayudacontenedor .preguntasfrecuentes{
+    padding: 1%;
+  }
+
+  .centrodeayudacontenedor .preguntasfrecuentes .preguntas ul{
+    margin: 7% 0;
+  }
+
+  .centrodeayudacontenedor .preguntasfrecuentes .preguntas ul li{
+    margin-bottom: 3%;
+  }
+
+  .centrodeayudacontenedor .preguntasfrecuentes .preguntas ul li a{
+    font-size: 1.5em;
+  }
+
+  .centrodeayudacontenedor .preguntasfrecuentes .preguntasresultado details summary{
+    margin: 3% 0 3% 0;
+  }
+
+
+  .centrodeayudacontenedor .contacteconnosotros{
+    padding: 1%;
+  }
+
+  .centrodeayudacontenedor .contacteconnosotros h3{
+    margin-bottom: 3%;
+  }
+
+  .centrodeayudacontenedor .contacteconnosotros ul li{
+    margin-bottom: 3%;
+  }
+
+  .banner3{
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+
+  /* WARNING: Sesion */
+
+  .sesion2 p{
+    width: 50%;
+  }
+
+}
+
+@media (min-width: 425px) {
+
+  /* WARNING: TODOS LOS ESTILOS DEL "HEADER" SE ENCARGA AGUSTIN!!! */
+
+  .header .headerparte2 ul li:nth-child(2){
+    width: 40%;
+  }
+
+
+  /* WARNING: STILOS DEL "SLIDER" SE ENCARGA CRISTIAN!!! */
+
+  .slider{
+    margin: 16% 0 2% 0;
+  }
+
+  .flechaderecha .right{
+    font-size: 800%;
+  }
+
+  .flechaisquierda .left{
+    font-size: 800%;
+  }
+
+  /* WARNING: STILOS DEL "MENU DE PAGOS" SE ENCARGA CRISTIAN!!! */
+
+  .menudepagos .tarjetas{
+    font-size: 280%;
+    margin-top: 1%;
+    margin-bottom: 1.5%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 2" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha2 .right2{
+    font-size: 500%;
+  }
+
+  .flechaisquierda2 .left2{
+    font-size: 500%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 3" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha3 .right3{
+    font-size: 600%;
+  }
+
+  .flechaisquierda3 .left3{
+    font-size: 600%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 4" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha4 .right4{
+    font-size: 500%;
+  }
+
+  .flechaisquierda4 .left4{
+    font-size: 500%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 5" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha5 .right5{
+    font-size: 500%;
+  }
+
+  .flechaisquierda5 .left5{
+    font-size: 500%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 6" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha6 .right6{
+    font-size: 500%;
+  }
+
+  .flechaisquierda6 .left6{
+    font-size: 500%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 7" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha7 .right7{
+    font-size: 500%;
+  }
+
+  .flechaisquierda7 .left7{
+    font-size: 500%;
+  }
+
+  .ofertas5 .botonvermas5 a{
+    font-size: 1.5em;
+  }
+
+  .ofertas5 .botonvermas5 a:hover{
+    font-size: 1.4em;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 8" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha8 .right8{
+    font-size: 600%;
+  }
+
+  .flechaisquierda8 .left8{
+    font-size: 600%;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "MENU IZQUIERDO FIXED" SE ENCARGA CRISTIAN!!! */
+
+  .menuizquierdofixed{
+    width: 65%;
+  }
+
+
+  /* WARNING: TODOS LOS ESTILOS DEL "CENTRO DE AYUDA" SE ENCARGA JONAS!!! */
+
+  .centrodeayudacontenedor{
+    margin-top: 15.5%;
+  }
+
+  .banner3{
+    margin-top: 2%;
+    margin-bottom: 4%;
+  }
+
+  /* WARNING: Sesion */
+
+  .sesion2 p{
+    width: 44%;
+  }
+
+}
+
+
+
+@media (orientation: landscape) {
+
+  .menuizquierdofixed .bienvenidofixed .icononopersona{
+    font-size: 12em;
+  }
+
+  .banner2 img{
+    width: 170%;
+    margin-left: -25%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha .right{
+    font-size: 1000%;
+  }
+
+  .flechaisquierda .left{
+    font-size: 1000%;
+  }
+
+  .flechaderecha .right:hover{
+    padding-right: 7%;
+  }
+
+  .flechaisquierda .left:hover{
+    padding-left: 7%;
+  }
+
+  .iconopaginacion{
+    display: block;
+  }
+
+  /* WARNING: STILOS DEL "MENU DE PAGOS" SE ENCARGA CRISTIAN!!! */
+
+  .menudepagos .tarjetas{
+    font-size: 350%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .menudepagos .sucursales{
+    font-size: 350%;
+  }
+
+  .menudepagos .envio{
+    font-size: 350%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 2" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha2 .right2{
+    font-size: 700%;
+  }
+
+  .flechaisquierda2 .left2{
+    font-size: 700%;
+  }
+
+  .flechaderecha2 .right2:hover{
+    padding-right: 7%;
+  }
+
+  .flechaisquierda2 .left2:hover{
+    padding-left: 7%;
+  }
+
+  .slider2 ul li{
+    width: 50%;
+  }
+
+
+  /* WARNING: STILOS DEL "SLIDER 3" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha3 .right3{
+    font-size: 600%;
+  }
+
+  .flechaisquierda3 .left3{
+    font-size: 600%;
+  }
+
+  .flechaderecha3 .right3:hover{
+    padding-right: 7%;
+  }
+
+  .flechaisquierda3 .left3:hover{
+    padding-left: 7%;
+  }
+
+  .slider3 ul li{
+    width: 32%;
+  }
+
+  .flechaisquierda3{
+    width: 10%;
+  }
+
+  .flechaderecha3{
+    width: 10%;
+  }
+
+  .slider3 ul li img{
+    width: 95%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 4" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha4 .right4{
+    font-size: 700%;
+  }
+
+  .flechaisquierda4 .left4{
+    font-size: 700%;
+  }
+
+  .flechaderecha4 .right4:hover{
+    padding-right: 7%;
+  }
+
+  .flechaisquierda4 .left4:hover{
+    padding-left: 7%;
+  }
+
+  .slider4 ul li{
+    width: 50%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 5" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha5 .right5{
+    font-size: 700%;
+  }
+
+  .flechaisquierda5 .left5{
+    font-size: 700%;
+  }
+
+  .flechaderecha5 .right5:hover{
+    padding-right: 7%;
+  }
+
+  .flechaisquierda5 .left5:hover{
+    padding-left: 7%;
+  }
+
+  .slider5 ul li{
+    width: 50%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 6" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha6 .right6{
+    font-size: 700%;
+  }
+
+  .flechaisquierda6 .left6{
+    font-size: 700%;
+  }
+
+  .flechaderecha6 .right6:hover{
+    padding-right: 7%;
+  }
+
+  .flechaisquierda6 .left6:hover{
+    padding-left: 7%;
+  }
+
+  .slider6 ul li{
+    width: 50%;
+  }
+
+
+  /* WARNING: STILOS DEL "SLIDER 7" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha7 .right7{
+    font-size: 700%;
+  }
+
+  .flechaisquierda7 .left7{
+    font-size: 700%;
+  }
+
+  .flechaderecha7 .right7:hover{
+    padding-right: 7%;
+  }
+
+  .flechaisquierda7 .left7:hover{
+    padding-left: 7%;
+  }
+
+  .slider7 ul li{
+    width: 33.33%;
+  }
+
+  .ofertas5 h1{
+    width: 40%;
+    font-size: 1.6em;
+    margin-top: 1%;
+  }
+
+  .ofertas5 .botonvermas5{
+    width: 17%;
+  }
+
+
+  /* WARNING: STILOS DEL "SLIDER 8" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha8 .right8{
+    font-size: 600%;
+  }
+
+  .flechaisquierda8 .left8{
+    font-size: 600%;
+  }
+
+  .flechaderecha8 .right8:hover{
+    padding-right: 7%;
+  }
+
+  .flechaisquierda8 .left8:hover{
+    padding-left: 7%;
+  }
+
+  .slider8 ul li{
+    width: 32%;
+  }
+
+  .flechaisquierda8{
+    width: 10%;
+  }
+
+  .flechaderecha8{
+    width: 10%;
+  }
+
+  .slider8 ul li img{
+    width: 95%;
+  }
+
+}
+
+
+
+@media (min-width: 768px) {
+
+  .menuizquierdofixed .bienvenidofixed .icononopersona{
+    font-size: 11em;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "HEADER" SE ENCARGA AGUSTIN!!! */
+
+  .header .headerparte2 ul li:nth-child(2){
+    width: 25%;
+    margin-right: 5%;
+  }
+
+  .header .headerparte2 ul li:nth-child(3){
+    display: none;
+  }
+
+  .header .headerparte2 ul li:nth-child(4){
+    display: block;
+  }
+
+  .banner2 img{
+    width: 170%;
+    margin-left: -25%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER" SE ENCARGA CRISTIAN!!! */
+
+  .slider{
+    margin: 11% 0 2% 0;
+  }
+
+  .flechaderecha .right{
+    font-size: 1000%;
+  }
+
+  .flechaisquierda .left{
+    font-size: 1000%;
+  }
+
+  .flechaderecha .right:hover{
+    padding-right: 7%;
+  }
+
+  .flechaisquierda .left:hover{
+    padding-left: 7%;
+  }
+
+  .iconopaginacion{
+    display: block;
+  }
+
+  /* WARNING: STILOS DEL "MENU DE PAGOS" SE ENCARGA CRISTIAN!!! */
+
+  .menudepagos .tarjetas{
+    font-size: 350%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .menudepagos .sucursales{
+    font-size: 350%;
+  }
+
+  .menudepagos .envio{
+    font-size: 350%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 2" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha2 .right2{
+    font-size: 700%;
+  }
+
+  .flechaisquierda2 .left2{
+    font-size: 700%;
+  }
+
+  .flechaderecha2 .right2:hover{
+    padding-right: 7%;
+  }
+
+  .flechaisquierda2 .left2:hover{
+    padding-left: 7%;
+  }
+
+  .slider2 ul li{
+    width: 50%;
+  }
+
+
+  /* WARNING: STILOS DEL "SLIDER 3" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha3 .right3{
+    font-size: 700%;
+  }
+
+  .flechaisquierda3 .left3{
+    font-size: 700%;
+  }
+
+  .flechaderecha3 .right3:hover{
+    padding-right: 7%;
+  }
+
+  .flechaisquierda3 .left3:hover{
+    padding-left: 7%;
+  }
+
+  .slider3 ul li{
+    width: 32%;
+  }
+
+  .flechaisquierda3{
+    width: 10%;
+  }
+
+  .flechaderecha3{
+    width: 10%;
+  }
+
+  .slider3 ul li img{
+    width: 95%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 4" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha4 .right4{
+    font-size: 700%;
+  }
+
+  .flechaisquierda4 .left4{
+    font-size: 700%;
+  }
+
+  .flechaderecha4 .right4:hover{
+    padding-right: 7%;
+  }
+
+  .flechaisquierda4 .left4:hover{
+    padding-left: 7%;
+  }
+
+  .slider4 ul li{
+    width: 50%;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "SECCION" SE ENCARGA CRISTIAN!!! */
+
+
+  .seccionisquierda{
+    margin-left: 0;
+    width: 25%;
+  }
+
+  .seccionderecha{
+    margin-right: 0;
+    width: 25%;
+  }
+
+  .seccioncentro{
+    display: block;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 5" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha5 .right5{
+    font-size: 700%;
+  }
+
+  .flechaisquierda5 .left5{
+    font-size: 700%;
+  }
+
+  .flechaderecha5 .right5:hover{
+    padding-right: 7%;
+  }
+
+  .flechaisquierda5 .left5:hover{
+    padding-left: 7%;
+  }
+
+  .slider5 ul li{
+    width: 50%;
+  }
+
+
+  /* WARNING: TODOS LOS ESTILOS DEL "SECCION 2" SE ENCARGA CRISTIAN!!! */
+
+  .seccioncontenedor2{
+    display: flex;
+  }
+
+  .seccionisquierda2{
+    width: 49.3%;
+  }
+
+  .seccioncentro2{
+    width: 49%;
+    margin-top: 0;
+  }
+
+  .seccioncentro2 ul li:first-child{
+    width: 79%;
+  }
+
+  .seccioncentro2 ul li{
+    width: 79%;
+    margin-bottom: 2%;
+  }
+
+
+
+  /* WARNING: STILOS DEL "SLIDER 6" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha6 .right6{
+    font-size: 700%;
+  }
+
+  .flechaisquierda6 .left6{
+    font-size: 700%;
+  }
+
+  .flechaderecha6 .right6:hover{
+    padding-right: 7%;
+  }
+
+  .flechaisquierda6 .left6:hover{
+    padding-left: 7%;
+  }
+
+  .slider6 ul li{
+    width: 50%;
+  }
+
+
+  /* WARNING: STILOS DEL "SLIDER 7" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha7 .right7{
+    font-size: 700%;
+  }
+
+  .flechaisquierda7 .left7{
+    font-size: 700%;
+  }
+
+  .flechaderecha7 .right7:hover{
+    padding-right: 7%;
+  }
+
+  .flechaisquierda7 .left7:hover{
+    padding-left: 7%;
+  }
+
+  .slider7 ul li{
+    width: 33.33%;
+  }
+
+  .ofertas5 h1{
+    width: 40%;
+    font-size: 1.6em;
+    margin-top: 1%;
+  }
+
+  .ofertas5 .botonvermas5{
+    width: 17%;
+  }
+
+
+  /* WARNING: STILOS DEL "SLIDER 8" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha8 .right8{
+    font-size: 700%;
+  }
+
+  .flechaisquierda8 .left8{
+    font-size: 700%;
+  }
+
+  .flechaderecha8 .right8:hover{
+    padding-right: 7%;
+  }
+
+  .flechaisquierda8 .left8:hover{
+    padding-left: 7%;
+  }
+
+  .slider8 ul li{
+    width: 32%;
+  }
+
+  .flechaisquierda8{
+    width: 10%;
+  }
+
+  .flechaderecha8{
+    width: 10%;
+  }
+
+  .slider8 ul li img{
+    width: 95%;
+  }
+
+
+  /* WARNING: TODOS LOS ESTILOS DEL "ARTICULOS" SE ENCARGA CRISTIAN!!! */
+
+  .articulos section{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .articulos .articulo{
+    width: 48%;
+  }
+
+  .articulos .articulo a .tituloyprecio{
+    padding: 30% 0;
+  }
+
+  .articulos .articulo a .tituloyprecio h1{
+    font-size: 1.3em;
+    margin-bottom: 5%;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "FOOTER" SE ENCARGA CRISTIAN!!! */
+
+
+  .footerparte1 ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footerparte1 ul li{
+    width: 50%;
+  }
+
+  .footerparte3{
+    display: block;
+    width: 100%;
+    margin-bottom: 2%;
+  }
+
+  .footerparte3 ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footerparte3 ul li{
+    width: 15%;
+  }
+
+  .footerparte3 ul li img{
+    width: 100%;
+  }
+
+  .footerparte4 ul li h4{
+    text-align: left;
+    font-size: 1.5em;
+  }
+
+  .footerparte4 ul li p{
+    margin-top: 2%;
+    display: block;
+    font-size: 1.3em;
+    color: #fff;
+    text-shadow: 1px 1px 8px #000;
+  }
+
+  .footerparte4 ul li .ayuda-legal{
+    width: 34%;
+    display: flex;
+    margin-left: 0;
+    margin-top: 1%;
+  }
+
+  .footerparte4 ul li .ayuda{
+    display: block;
+    margin-top: 2%;
+    text-align: left;
+    font-size: 1.5em;
+    color: #fff;
+    text-shadow: 1px 1px 8px #000;
+  }
+
+
+  .footerparte4 ul li .legal{
+    margin-top: 2%;
+    text-align: left;
+    font-size: 1.5em;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "MENU IZQUIERDO FIXED" SE ENCARGA CRISTIAN!!! */
+
+  .menuizquierdofixed{
+    width: 38%;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "CENTRO DE AYUDA" SE ENCARGA JONAS!!! */
+
+  .centrodeayudacontenedor{
+    margin-top: 10%;
+  }
+
+  .centrodeayudacontenedor h1{
+    font-size: 1.7em;
+    margin-bottom: 2%;
+  }
+
+  .centrodeayudacontenedor h2{
+    font-size: 1.5em;
+    margin-bottom: 2%;
+  }
+
+  .centrodeayudacontenedor .lomasconsultado ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .centrodeayudacontenedor .lomasconsultado ul li{
+    margin-bottom: 2%;
+    width: 48% !important;
+  }
+
+  .centrodeayudacontenedor .lomasconsultado ul li a{
+    padding: 5% 0;
+    font-size: 1.6em;
+    width: 100%;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li{
+    width: 48%;
+    margin-bottom: 2% !important;
+    padding: 3% 4% 3% 4%;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .compras ul{
+    margin: 5% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .compras ul li{
+    font-size: 1.5em;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .pagos ul{
+    margin: 5% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .pagos ul li{
+    font-size: 1.5em;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .entregas ul{
+    margin: 5% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .entregas ul li{
+    font-size: 1.5em;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .sucursales ul{
+    margin: 5% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .sucursales ul li{
+    font-size: 1.5em;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .garantias ul{
+    margin: 5% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .garantias ul li{
+    font-size: 1.5em;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .cambios ul{
+    margin: 5% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .cambios ul li{
+    font-size: 1.5em;
+  }
+
+  .centrodeayudacontenedor .preguntasfrecuentes{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .centrodeayudacontenedor .preguntasfrecuentes .preguntas{
+    width: 48%;
+  }
+
+  .centrodeayudacontenedor .preguntasfrecuentes .preguntasresultado{
+    width: 48%;
+  }
+
+  .centrodeayudacontenedor .preguntasfrecuentes .preguntas ul{
+    margin: 3% 0;
+  }
+
+  .banner3 img{
+    width: 125%;
+  }
+
+
+  .centrodeayudacontenedor .contacteconnosotros{
+    padding: 2%;
+  }
+
+  .centrodeayudacontenedor .contacteconnosotros h3{
+    margin-bottom: 2%;
+  }
+
+  .centrodeayudacontenedor .contacteconnosotros ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .centrodeayudacontenedor .contacteconnosotros ul li{
+    margin-bottom: 2%;
+    width: 48%;
+  }
+
+  .banner3{
+    margin-bottom: 2%;
+  }
+
+    /* WARNING: TODOS LOS ESTILOS DEL "Formulario de registro" SE ENCARGA CRISTIAN!!! */
+
+
+  .registroprimeraparte{
+    width: 50%;
+  }
+
+  .registrasegundaparte{
+    display: block;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "FORMULARIO DE SESION" SE ENCARGA CRISTIAN!!! */
+
+
+.sesion{
+  width: 50%;
+  z-index: 3;
+  margin-left: 25%;
+}
+
+
+}
+
+@media (min-width: 1024px) {
+
+
+    /* WARNING: TODOS LOS ESTILOS DEL "HEADER" SE ENCARGA AGUSTIN!!! */
+
+
+  .header .headerparte2{
+    padding-top: 0.8%;
+    padding-left: 3%;
+  }
+
+  .header .headerparte2 ul li:nth-child(2){
+    width: 18%;
+    margin-right: 10%;
+  }
+
+  .banner img{
+    width: 100%;
+  }
+
+  .banner2 img{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER" SE ENCARGA CRISTIAN!!! */
+
+  .slider{
+    margin: 8% 0 2% 0;
+  }
+
+  .iconopaginacion{
+    font-size: 220%;
+  }
+
+  .slider ul li img{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* WARNING: STILOS DEL "MENU DE PAGOS" SE ENCARGA CRISTIAN!!! */
+
+  .menudepagos .tarjetas{
+    font-size: 400%;
+  }
+
+  .menudepagos .sucursales{
+    font-size: 400%;
+  }
+
+  .menudepagos .envio{
+    font-size: 400%;
+  }
+
+  .menudepagos .oculto{
+    display: block;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 2" SE ENCARGA CRISTIAN!!! */
+
+  .ofertas{
+    display: block;
+
+  }
+
+  .slider2{
+    width: 80%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .slider2 ul li{
+    width: 33%;
+  }
+
+  .flechaisquierda2{
+    border-left: none !important;
+    background: #00000057;
+  }
+
+  .flechaderecha2{
+    background: #00000057;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 3" SE ENCARGA CRISTIAN!!! */
+
+  .flechaisquierda3{
+    width: 7%;
+  }
+
+  .flechaderecha3{
+    width: 7%;
+  }
+
+  .flechaderecha3 .right3:hover{
+    padding-right: 10%;
+  }
+
+  .flechaisquierda3 .left3:hover{
+    padding-left: 10%;
+  }
+
+  .slider3 ul li{
+    width: 24%;
+  }
+
+  /* WARNING: STILOS DEL "SECCION 3" SE ENCARGA CRISTIAN!!! */
+
+  .seccioncontenedor3 ul li{
+    width: 24%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 4" SE ENCARGA CRISTIAN!!! */
+
+  .ofertas2{
+    display: block;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .slider4{
+    width: 80%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .slider4 ul li{
+    width: 33%;
+  }
+
+  .flechaisquierda4{
+    background: #00000057;
+  }
+
+  .flechaderecha4{
+    background: #00000057;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "SECCION" SE ENCARGA CRISTIAN!!! */
+
+  .seccionderecha ul li{
+    border: solid 1px #000;
+  }
+
+  .seccionisquierda ul li{
+    border: solid 1px #000;
+  }
+
+  .seccioncentro{
+    border: solid 1px #000;
+  }
+
+  .seccioncentro h1{
+    font-size: 1.8em;
+  }
+
+  .seccioncentro h3{
+    font-size: 1.4em;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 5" SE ENCARGA CRISTIAN!!! */
+
+  .ofertas3{
+    display: block;
+  }
+
+  .slider5{
+    width: 80%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .slider5 ul li{
+    width: 33%;
+  }
+
+  .flechaisquierda5{
+    border-left: none !important;
+    background: #00000057;
+  }
+
+  .flechaderecha5{
+    background: #00000057;
+  }
+
+
+  /* WARNING: STILOS DEL "SLIDER 6" SE ENCARGA CRISTIAN!!! */
+
+  .ofertas4{
+    display: block;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .slider6{
+    width: 80%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .slider6 ul li{
+    width: 33%;
+  }
+
+  .flechaisquierda6{
+    background: #00000057;
+  }
+
+  .flechaderecha6{
+    background: #00000057;
+  }
+
+
+  /* WARNING: STILOS DEL "SLIDER 7" SE ENCARGA CRISTIAN!!! */
+
+  .slider7 ul li{
+    width: 25%;
+  }
+
+  .ofertas5 .botonvermas5{
+    width: 14%;
+  }
+
+  .flechaisquierda7{
+    background: #00000057;
+  }
+
+  .flechaderecha7{
+    background: #00000057;
+  }
+
+
+  /* WARNING: STILOS DEL "SLIDER 8" SE ENCARGA CRISTIAN!!! */
+
+  .flechaisquierda8{
+    width: 7%;
+  }
+
+  .flechaderecha8{
+    width: 7%;
+  }
+
+  .flechaderecha8 .right8:hover{
+    padding-right: 10%;
+  }
+
+  .flechaisquierda8 .left8:hover{
+    padding-left: 10%;
+  }
+
+  .slider8 ul li{
+    width: 24%;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "ARTICULOS" SE ENCARGA CRISTIAN!!! */
+
+
+  .articulos .articulo{
+    width: 32%;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "FOOTER" SE ENCARGA CRISTIAN!!! */
+
+  .footerparte1 ul li{
+    width: 30%;
+  }
+
+  .footerparte1 ul li ul{
+    margin-top: 0;
+  }
+
+  .footerparte4 ul{
+    display: flex;
+  }
+
+  .footerparte4 ul li{
+    width: 50%;
+  }
+
+  .footerparte4 ul li p{
+    width: 100%;
+  }
+
+  .footerparte4 ul li .ayuda-legal{
+    width: 52%;
+  }
+
+  .footerparte4 ul li ul{
+    display: block;
+    display: flex;
+  }
+
+  .footerparte4 ul li ul li{
+    width: 18%;
+    margin-top: 8%;
+  }
+
+  .footerparte4 ul li ul li img{
+    width: 100%;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "MENU IZQUIERDO FIXED" SE ENCARGA CRISTIAN!!! */
+
+  .menuizquierdofixed{
+    width: 28%;
+  }
+
+  .menuizquierdofixed .bienvenidofixed h3{
+    margin-bottom: 4%;
+  }
+
+  .menuizquierdofixed .categoriasfixed{
+    font-size: 1.9em;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "CENTRO DE AYUDA" SE ENCARGA JONAS!!! */
+
+  .centrodeayudacontenedor{
+    margin-top: 6.5%;
+  }
+
+  .centrodeayudacontenedor .lomasconsultado ul li{
+    width: 32% !important;
+  }
+
+  .centrodeayudacontenedor .lomasconsultado ul li a{
+    padding: 7% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li{
+    width: 32%;
+    padding: 2% 3% 2% 3%;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .compras ul{
+    margin: 3% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .pagos ul{
+    margin: 3% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .entregas ul{
+    margin: 3% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .sucursales ul{
+    margin: 3% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .garantias ul{
+    margin: 3% 0;
+  }
+
+  .centrodeayudacontenedor .centrodeayuda ul li .cambios ul{
+    margin: 3% 0;
+  }
+
+  .centrodeayudacontenedor .preguntasfrecuentes{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .centrodeayudacontenedor .preguntasfrecuentes .preguntas{
+    width: 35%;
+  }
+
+  .centrodeayudacontenedor .preguntasfrecuentes .preguntasresultado{
+    width: 61%;
+  }
+
+  .banner3 img{
+    width: 100%;
+  }
+
+  .centrodeayudacontenedor .contacteconnosotros ul li{
+    width: 32%;
+  }
+
+  .banner3{
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .registro{
+    width: 70%;
+    margin-left: 10%;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "FORMULARIO DE SESION" SE ENCARGA CRISTIAN!!! */
+
+
+.sesion{
+  width: 40%;
+  margin-left: 30%;
+}
+
+.sesion2 button{
+  font-size: 1.5em;
+}
+
+/* WARNING: Sesion */
+
+.sesion2 p{
+  width: 41%;
+}
+
+}
+
+@media (min-width: 1280px) {
+
+  .menuizquierdofixed .bienvenidofixed .icononopersona{
+    font-size: 10em;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "HEADER" SE ENCARGA AGUSTIN!!! */
+
+.header .headerparte1{
+  display: block;
+}
+
+.header .headerparte3{
+  display: block;
+}
+
+.header{
+  position: static;
+}
+
+.header .headerparte2{
+  padding-left: 2%;
+}
+
+.header .headerparte2 ul li:nth-child(2){
+  width: 17%;
+  margin-right: 1%;
+}
+
+.header .headerparte2 ul li input{
+  padding: 2.2% 2%;
+  font-size: 1.5em;
+}
+
+.header .headerparte2 ul li:nth-child(6){
+  width: 30%;
+}
+
+.header .headerparte2 ul li h3{
+  display: block;
+  font-size: 1.5em;
+  margin-top: 3%;
+}
+
+  /* WARNING: STILOS DEL "SLIDER" SE ENCARGA CRISTIAN!!! */
+
+  .slider{
+    margin: 2% 0 2% 0;
+  }
+
+  .flechaderecha .right{
+    font-size: 1200%;
+  }
+
+  .flechaisquierda .left{
+    font-size: 1200%;
+  }
+
+  .flechaderecha .right:hover{
+    padding-right: 5%;
+  }
+
+  .flechaisquierda .left:hover{
+    padding-left: 5%;
+  }
+
+  .iconopaginacion:hover{
+    color: red;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 2" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha2 .right2{
+    font-size: 800%;
+  }
+
+  .flechaisquierda2 .left2{
+    font-size: 800%;
+  }
+
+  .flechaderecha2 .right2:hover{
+    padding-right: 5%;
+  }
+
+  .flechaisquierda2 .left2:hover{
+    padding-left: 5%;
+  }
+
+  .slider2 ul li{
+    width: 25%;
+  }
+
+  .ofertas{
+    padding: 4.5% 5%;
+  }
+
+  .ofertas h1{
+    font-size: 2.5em;
+  }
+
+  .ofertas h3{
+    font-size: 1.4em;
+  }
+
+  .ofertas p{
+    font-size: 2em;
+  }
+
+  .ofertas .botonvermas a{
+    font-weight: bold;
+  }
+
+
+
+  /* WARNING: STILOS DEL "SLIDER 3" SE ENCARGA CRISTIAN!!! */
+
+  .slider3 ul li{
+    width: 16%;
+  }
+
+  .flechaisquierda3{
+    width: 5%;
+  }
+
+  .flechaderecha3{
+    width: 5%;
+  }
+
+  .fondoflecha3{
+    opacity: 0;
+  }
+
+  .fondoflecha3:hover{
+    opacity: 1;
+    transition: all 0.5s;
+  }
+
+  .flechaderecha3 .right3{
+    font-size: 600%;
+  }
+
+  .flechaisquierda3 .left3{
+    font-size: 600%;
+  }
+
+  .slider3 ul li img{
+    width: 100%;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 4" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha4 .right4{
+    font-size: 800%;
+  }
+
+  .flechaisquierda4 .left4{
+    font-size: 800%;
+  }
+
+  .flechaderecha4 .right4:hover{
+    padding-right: 5%;
+  }
+
+  .flechaisquierda4 .left4:hover{
+    padding-left: 5%;
+  }
+
+  .slider4 ul li{
+    width: 25%;
+  }
+
+  .ofertas2{
+    padding: 4.5% 5%;
+  }
+
+  .ofertas2 h1{
+    font-size: 2.5em;
+  }
+
+  .ofertas2 h3{
+    font-size: 1.4em;
+  }
+
+  .ofertas2 p{
+    font-size: 2em;
+  }
+
+  .ofertas2 .botonvermas2 a{
+    font-weight: bold;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "SECCION" SE ENCARGA CRISTIAN!!! */
+
+
+  .seccionisquierda{
+    width: 20.5%;
+  }
+
+  .seccionderecha{
+    width: 20.5%;
+  }
+
+  .seccioncentro{
+    width: 57.5%;
+    margin-top: 0;
+  }
+
+  .seccioncentro h1{
+    font-size: 1.9em;
+  }
+
+  .seccioncentro h3{
+    font-size: 1.5em;
+  }
+
+  .seccioncentro .vermas{
+    font-size: 1.4em;
+  }
+
+  .seccioncentro .vermas:hover{
+    font-size: 1.3em;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 5" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha5 .right5{
+    font-size: 800%;
+  }
+
+  .flechaisquierda5 .left5{
+    font-size: 800%;
+  }
+
+  .flechaderecha5 .right5:hover{
+    padding-right: 5%;
+  }
+
+  .flechaisquierda5 .left5:hover{
+    padding-left: 5%;
+  }
+
+  .slider5 ul li{
+    width: 25%;
+  }
+
+  .ofertas3{
+    padding: 4.5% 5%;
+  }
+
+  .ofertas3 h1{
+    font-size: 2.5em;
+  }
+
+  .ofertas3 h3{
+    font-size: 1.4em;
+  }
+
+  .ofertas3 p{
+    font-size: 2em;
+  }
+
+  .ofertas3 .botonvermas3 a{
+    font-weight: bold;
+  }
+
+
+  /* WARNING: TODOS LOS ESTILOS DEL "SECCION 2" SE ENCARGA CRISTIAN!!! */
+
+  .seccioncontenedor2{
+    background: #ffffffb5;
+    border-radius: 4px;
+  }
+
+  .seccionisquierda2 .seccion2vermas{
+    display: none;
+  }
+
+  .seccionisquierda2 h1{
+    top: 85.6%;
+  }
+
+  .seccionisquierda2 h3{
+    top: 93%;
+  }
+
+  .seccionisquierda2{
+    width: 40%;
+  }
+
+  .seccionderecha2 ul li:hover{
+    background: #7d1cad94;
+    transition: all 0.5s;
+  }
+
+  .seccionisquierda2:hover, .seccioncentro2 ul li:hover{
+    border: solid 2px #7d1cad94;
+    border-radius: 4px;
+    transition: all 0.3s;
+  }
+
+  .seccioncentro2{
+    width: 30%;
+    margin-top: 1.2%;
+  }
+
+  .seccioncentro2{
+    width: 30%;
+  }
+
+  .seccioncentro2 ul li:first-child{
+   width: 100%;
+  }
+
+ .seccioncentro2 ul li{
+   width: 100%;
+  }
+
+  .seccioncentro2 h1{
+    font-size: 1.6em;
+    top: 46%;
+  }
+
+  .seccioncentro2 h3{
+    font-size: 1.6em;
+  }
+
+  .seccionderecha2{
+    display: block;
+  }
+
+  /* WARNING: STILOS DEL "SLIDER 6" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha6 .right6{
+    font-size: 800%;
+  }
+
+  .flechaisquierda6 .left6{
+    font-size: 800%;
+  }
+
+  .flechaderecha6 .right6:hover{
+    padding-right: 5%;
+  }
+
+  .flechaisquierda6 .left6:hover{
+    padding-left: 5%;
+  }
+
+  .slider6 ul li{
+    width: 25%;
+  }
+
+  .ofertas4{
+    padding: 4.5% 5%;
+  }
+
+  .ofertas4 h1{
+    font-size: 2.5em;
+  }
+
+  .ofertas4 h3{
+    font-size: 1.4em;
+  }
+
+  .ofertas4 p{
+    font-size: 2em;
+  }
+
+  .ofertas4 .botonvermas4 a{
+    font-weight: bold;
+  }
+
+
+  /* WARNING: STILOS DEL "SLIDER 7" SE ENCARGA CRISTIAN!!! */
+
+  .flechaderecha7 .right7{
+    font-size: 800%;
+  }
+
+  .flechaisquierda7 .left7{
+    font-size: 800%;
+  }
+
+  .flechaderecha7 .right7:hover{
+    padding-right: 5%;
+  }
+
+  .flechaisquierda7 .left7:hover{
+    padding-left: 5%;
+  }
+
+  .slider7 ul li{
+    width: 16.66%;
+  }
+
+
+  /* WARNING: STILOS DEL "SLIDER 8" SE ENCARGA CRISTIAN!!! */
+
+  .slider8 ul li{
+    width: 16%;
+  }
+
+  .flechaisquierda8{
+    width: 5%;
+  }
+
+  .flechaderecha8{
+    width: 5%;
+  }
+
+  .fondoflecha8{
+    opacity: 0;
+  }
+
+  .fondoflecha8:hover{
+    opacity: 1;
+    transition: all 0.5s;
+  }
+
+  .flechaderecha8 .right8{
+    font-size: 600%;
+  }
+
+  .flechaisquierda8 .left8{
+    font-size: 600%;
+  }
+
+  .slider8 ul li img{
+    width: 100%;
+  }
+
+
+  /* WARNING: TODOS LOS ESTILOS DEL "ARTICULOS" SE ENCARGA CRISTIAN!!! */
+
+
+  .articulosymenuizquierdo{
+    display: flex;
+  }
+
+  .menuizquierdo{
+    display: block;
+  }
+
+
+  .articulos{
+    width: 76%;
+  }
+
+  .articulos .articulo{
+    width: 24%;
+  }
+
+  .articulos .articulo a{
+    display: block;
+  }
+
+  .articulos .articulo a .cuotayimagen{
+    width: 100%;
+  }
+
+  .articulos .articulo a .tituloyprecio{
+    width: 100%;
+    padding: 2% 0;
+  }
+
+
+
+  /* WARNING: TODOS LOS ESTILOS DEL "FOOTER" SE ENCARGA CRISTIAN!!! */
+
+  .footerparte4 ul li .ayuda-legal{
+    width: 42%;
+  }
+
+  .footerparte2{
+    display: block;
+    width: 100%;
+  }
+
+  .footerparte2 ul{
+    width: 100%;
+    display: flex;
+  }
+
+  .footerparte2 ul li{
+    width: 20%;
+    text-align: left;
+    padding: 2%;
+  }
+
+  .footerparte2 ul li h4{
+    font-size: 1.7em;
+    color: #fff;
+    text-shadow: 1px 1px 8px #000;
+    margin-bottom: 7%;
+    margin-top: 7%;
+  }
+
+  .footerparte2 ul li a{
+    font-size: 1.5em;
+    color: #ffffff96;
+    text-shadow: 1px 1px 8px #000;
+    margin-bottom: 4%;
+    margin-top: 4%;
+  }
+
+  /* WARNING: TODOS LOS ESTILOS DEL "MENU IZQUIERDO FIXED" SE ENCARGA CRISTIAN!!! */
+
+  .menuizquierdofixed{
+    width: 23%;
+  }
+
+
+  /* WARNING: TODOS LOS ESTILOS DEL "CENTRO DE AYUDA" SE ENCARGA JONAS!!! */
+
+  .centrodeayudacontenedor{
+    margin-top: 1%;
+  }
+
+  .registro{
+    width: 60%;
+    margin-left: 15%;
+  }
+
+  /* WARNING: Sesion */
+
+  .sesion2 p{
+    width: 34%;
+  }
+
+}

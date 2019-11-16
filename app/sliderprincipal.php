@@ -4,7 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class usuario extends Model
+class sliderprincipal extends Model
 {
+    public $table = "sliderprincipal";
     public $guarded = [];
 }

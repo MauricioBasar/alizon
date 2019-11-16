@@ -2,7 +2,7 @@
   <aside>
     <div class="bienvenidofixed">
       <div class="iconomenufixedcerrar"><i class="fal fa-window-close"></i></div>
-      @if ($_SESSION)
+      @if (session()->has("nombre"))
         <style>
           .bienvenidofixed img{
             width: 50%;
@@ -66,8 +66,8 @@
             transition: all 0.3s;
           }
         </style>
-        <img src="upload/fotos/{{$_SESSION["foto"]}}" alt="Foto de perfil">
-        <h1>Hola, {{$_SESSION["nombre"]. " " .$_SESSION["apellido"]}}</h1>
+        <img src="/storage/fotos/{{session()->get("foto")}}" alt="Foto de perfil">
+        <h1>Hola, {{session()->get("nombre"). " " .session()->get("apellido")}}</h1>
 
       <details class="opciones">
         <summary>Opciones</summary>
@@ -76,7 +76,7 @@
           <li><h4>Compras</h4></li>
           <li><h4>Datos</h4></li>
           <li><h4>Historial</h4></li>
-          <li><h4><a href="componentes/cerrarsesion.php">Cerrar Sesion</a></h4></li>
+          <li><h4><a href="/cerrarsesion">Cerrar Sesion</a></h4></li>
         </ul>
       </details>
       @else
@@ -92,12 +92,12 @@
 
     <div class="categoriasfixed">
       <ul>
-        <li><a href="index.php"><span><i class="fal fa-user-circle"></i></span>Inicio</a></li>
+        <li><a href="/"><span><i class="fal fa-user-circle"></i></span>Inicio</a></li>
         <li><a href="#"><span><i class="fal fa-user-circle"></i></span>Categorias</a></li>
         <li><a href="#"><span><i class="fal fa-user-circle"></i></span>Carrito de compras</a></li>
         <li><a href="#"><span><i class="fal fa-user-circle"></i></span>Mis compras</a></li>
         <li><a href="#"><span><i class="fal fa-user-circle"></i></span>Favoritos</a></li>
-        <li><a href="centrodeayuda.php"><span><i class="fal fa-user-circle"></i></span>Centro de ayuda</a></li>
+        <li><a href="/centrodeayuda"><span><i class="fal fa-user-circle"></i></span>Centro de ayuda</a></li>
         <li><a href="#"><span><i class="fal fa-user-circle"></i></span>Sucursales</a></li>
         <li><a href="#"><span><i class="fal fa-user-circle"></i></span>Venta telefonica</a></li>
         <li><a href="#"><span><i class="fal fa-user-circle"></i></span>Venta a empresas</a></li>

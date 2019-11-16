@@ -1,8 +1,8 @@
 <div class="registro">
 
   <div class="registroprimeraparte">
-<form action="#" method="post" enctype="multipart/form-data">
-  {{csrf_field()}}
+<form action="/registro" method="post" enctype="multipart/form-data">
+  @csrf
   <div class="iconoregistrocerrar"><i class="fal fa-window-close"></i></div>
   <h1 class="titulo">REGISTRATE</h1>
  <ul>

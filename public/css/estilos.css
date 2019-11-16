@@ -2423,6 +2423,26 @@ a{
   width: 100%;
 }
 
+.header .headerparte2 ul li:nth-child(7){
+  width: 15%;
+
+}
+
+.header .headerparte2 ul li:nth-child(7) a{
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.header .headerparte2 ul li:nth-child(7) a:hover{
+  font-size: 1.95em;
+  color: #000;
+  text-shadow: 1px 1px 1px #fff;
+  transition: 0.5s all;
+}
+
 
 
 

@@ -3,26 +3,36 @@
       <section>
         <div class="iconosesioncerrar"><i class="fal fa-window-close"></i></div>
         <h1>Iniciar Sesion</h1>
-        <form class="sesion2" action="#" method="post">
-          {{csrf_field()}}
+        <form class="sesion2" action="/sesion" method="post">
+          @csrf
           <ul>
 
             <li>
-              <input type="text" name="emaillogin" placeholder="Ingrese Su Correo" value="{{old("emaillogin")}}">
+              <input type="text" name="emaillogin" placeholder="Ingrese Su Correo" value="@isset($_COOKIE["emaillogin"]){{$_COOKIE["emaillogin"]}}@endisset">
             </li>
 
             <li>
-              <input type="password" name="contrasenalogin" placeholder="Contraseña" value="{{old("contrasenalogin")}}">
+              <input type="password" name="contrasenalogin" placeholder="Contraseña" value="@isset($_COOKIE["contrasenalogin"]){{$_COOKIE["contrasenalogin"]}}@endisset">
             </li>
 
             <li>
               @if ($metodoparatraerlogin)
-                {{$usuariologin->imprimirerrores("mensajeerrorlogin")}}
-              @endif
-              <span class="mensajeerrorlogin">
-              @if ($metodoparatraerlogin)
-                {{$usuariologin->imprimirerrores("emaillogin")}}
-                {{$usuariologin->imprimirerrores("contrasenalogin")}}
+                <style>.mensajeerrorlogin{ {{$errorestiloslogin}} }</style>
+                @if ($errors->get("emaillogin"))
+                  <span class="mensajeerrorlogin">
+                    @foreach ($errors->get("emaillogin") as $error)
+                      {{$error}}
+                      </br>
+                    @endforeach
+                  </span>
+                @elseif ($errors->get("contrasenalogin"))
+                  <span class="mensajeerrorlogin">
+                    @foreach ($errors->get("contrasenalogin") as $error)
+                      {{$error}}
+                      </br>
+                    @endforeach
+                  </span>
+                @endif
               @endif
               </span>
               <button class="enviar" type="submit" name="enviar">Entrar</button>

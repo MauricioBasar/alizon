@@ -1,4 +1,4 @@
-@extends('admin/plantilla')
+@extends('plantillagestor')
 
 @section('titulo')
   Alizon.com Gestor de contenidos

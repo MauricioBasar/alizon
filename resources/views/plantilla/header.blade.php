@@ -40,20 +40,24 @@
     <li><details>
       <summary>Categorias</summary>
       <ul>
-        <li><h4>Tecnologia</h4></li>
-        <li><h4>Electrodomesticos</h4></li>
-        <li><h4>Casa y jardin</h4></li>
-        <li><h4>Salud y Bellesa</h4></li>
-        <li><h4>Bebes y Niños</h4></li>
-        <li><h4>Deportes y Tiempo Libre</h4></li>
-        <li><h4>Herramientas</h4></li>
-        <li><h4>Acsesorios para Vehiculos</h4></li>
-        <li><h4>Mas Categorias</h4></li>
+        @foreach ($categorias as $categoria)
+          <li>
+            <a href="#"><h4>{{$categoria->categoria}}</h4></a>
+            {{-- <details>
+              <summary>Subcategorias</summary>
+              <ul>
+                @foreach ($categoria->subcategorias as $subcategoria)
+                  <li><a href="#"><h4>{{$subcategoria->subcategoria}}</h4></a></li>
+                @endforeach
+              </ul>
+            </details> --}}
+          </li>
+        @endforeach
       </ul>
     </details></li>
 
     <li><a href="#">Envio Gratis ¡impredible!</a></li>
-    <li><a href="#">Beneficio Anses</a></li>
+    <li><a href="/productos">Nuestros Productos</a></li>
     <li><a href="/ofertas">¡Ofertas BOMBA!</a></li>
     @if (session()->has("nombre"))
       <style>

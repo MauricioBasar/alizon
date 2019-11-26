@@ -79,6 +79,172 @@ a{
   display: none;
 }
 
+/* WARNING: producto estilos */
+
+.articulos section{
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.articulos section article{
+  border-radius: 5px;
+  width: 100%;
+}
+
+.articulos section article h1{
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
+.articulos section article h3{
+  text-align: left;
+  color: #fff126;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.articulos section article h4{
+  text-align: left;
+  color: #fff126;
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-top: 1%;
+}
+
+.articulos section article .categoriasubcategoria {
+  display: flex;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.articulos section article .categoriasubcategoria a{
+  text-align: left;
+  font-size: 2.5em;
+  color: white;
+  width: 50%;
+  border: solid 1px red;
+  border-radius: 5px;
+  background: #5d1616;
+  padding: 1% 3%;
+}
+
+.articulos section article .categoriasubcategoria a p{
+  border: none;
+}
+
+.articulos section article .imagenes ul{
+  display: flex;
+  width: 80%;
+  border: solid 1px red;
+  margin-left: 0;
+  border-radius: 5px;
+  padding: 2%;
+  background: #0e0a09a6;
+}
+
+.articulos section article .imagenes ul li:first-child{
+  width: 130%;
+}
+
+.articulos section article .imagenes ul li:nth-child(2){
+  width: 100%;
+}
+
+.articulos section article .imagenes ul li ul{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  background: #ff00006e;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+.articulos section article .imagenes ul li ul li:first-child{
+  width: 100%;
+}
+
+.articulos section article .imagenes ul li ul li:nth-child(2){
+  width: 100%;
+}
+
+.articulos section article .imagenes ul li ul li:first-child img{
+  width: 100%;
+}
+
+.articulos section article .imagenes ul li ul li:nth-child(2) img{
+  width: 100%;
+}
+
+.articulos section article .imagenes ul li img{
+  width: 100%;
+}
+
+.articulos section article a p{
+  border: solid 1px white;
+}
+
+/* WARNING: paginacion de laravel */
+
+.pagination{
+  display: flex;
+  border: solid 1px white;
+  border-radius: 5px;
+  width: 35%;
+  background: #000000a6;
+  color: #401a0e;
+  text-shadow: 1px 1px 0px #e4cb0a;
+  padding: 0.3%;
+  font-size: 2.5em;
+  margin-bottom: 3%;
+  font-weight: bold;
+}
+
+.pagination li{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border: solid 1px white;
+  border-radius: 5px;
+  background: #44596f;
+  width: 10%;
+  height: 100%;
+  text-align: center;
+}
+
+.pagination li:hover{
+  background: #ff26264f;
+  font-size: 0.95em;
+  transition: all 0.8s;
+}
+
+.pagination li:first-child:hover{
+  background: #1b1a1ab0;
+  padding-right: 1.5%;
+  transition: all 0.5s;
+}
+
+.pagination li:last-child:hover{
+  background: #1b1a1ab0;
+  padding-left: 1.5%;
+  transition: all 0.5s;
+}
+
+.pagination li:first-child{
+  margin: 0;
+  background: #351def8f;
+}
+
+.pagination li:last-child{
+  margin: 0;
+  background: #351def8f;
+}
+
+.pagination li a{
+  color: #ff253a;
+  text-shadow: -1px -1px 2px #271919;
+}
 
 /* WARNING: TODOS LOS ESTILOS DEL "SLIDER" SE ENCARGA CRISTIAN!!! */
 .slider{
@@ -1741,6 +1907,9 @@ a{
   background: #401a0eb3;
   display: none;
   margin: 2% 1% 3.5% 1%;
+  position: absolute;
+  height: 93.5%;
+  overflow: scroll;
 }
 
 .menuizquierdo h3{
@@ -1982,6 +2151,7 @@ a{
 .articulos{
   width: 100%;
   margin: 2% 0;
+  position: relative;
 }
 
 .articulos .articulo{
@@ -5208,6 +5378,7 @@ a{
 
   .articulosymenuizquierdo{
     display: flex;
+    position: relative;
   }
 
   .menuizquierdo{
@@ -5217,6 +5388,7 @@ a{
 
   .articulos{
     width: 76%;
+    margin-left: 24%;
   }
 
   .articulos .articulo{

@@ -1,10 +1,7 @@
 @php
-
   $borderojo = "border: solid 2px red;";
-  $bordeverde2 = "border: solid 2px green;";
-  $errorestilos2 = "text-align: center;font-weight: bold;color: #dcc300;text-shadow: 1px 2px 0px #000;font-size: 0.9em;background: repeating-linear-gradient(45deg, #ad0011, #ffdada00 119px);padding: 3% 1%;border-radius: 4px;display:block;";
-
-  var_dump($errors->get("imagen"));
+  $bordeverde = "border: solid 2px green;";
+  $errorestilos = "text-align: center;font-weight: bold;color: #dcc300;text-shadow: 1px 2px 0px #000;font-size: 0.9em;background: repeating-linear-gradient(45deg, #ad0011, #ffdada00 119px);padding: 3% 1%;border-radius: 4px;display:block;";
 @endphp
 <!DOCTYPE html>
 <html lang="es" dir="ltr">

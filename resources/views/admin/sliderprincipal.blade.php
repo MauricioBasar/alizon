@@ -1,4 +1,4 @@
-@extends('admin.plantilla')
+@extends('plantillagestor')
 
 @section('titulo')
   Alizon.com Gestor del Slider Pricipal
@@ -18,8 +18,9 @@
       <label for="imagen">Cargar Imagen</label>
       <input class="bordeimagen" type="file" name="imagen">
       <span class="mensajeerrorimagen">
+        @if ($errors->get("imagen"))
           @if ($errors->get("imagen"))
-            <style>.bordeimagen{ {{$borderojo2 ?? ''}} }.mensajeerrorimagen{ {{$errorestilos2 ?? ''}} }</style>
+            <style>.bordeimagen{ {{$borderojo ?? ''}} }.mensajeerrorimagen{ {{$errorestilos ?? ''}} }</style>
             @foreach ($errors->get("imagen") as $error)
               {{$error}}
               </br>
@@ -27,6 +28,7 @@
             @else
               <style>.bordeimagen{ {{$bordeverde}} }</style>
           @endif
+        @endif
       </span>
     </li>
 

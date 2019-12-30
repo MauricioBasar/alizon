@@ -108,8 +108,9 @@
 
   <div class="articulos">
     <section>
+      <a href="/marca/{{$producto->marca->id}}" class="marca">Marca: <span>{{$producto->marca->marca}}</span></a>
       <article>
-        <h1>{{$producto->titulo}}</h1>
+        <h1>{{$producto->titulo}} <span>{{$producto->oferta->oferta}}% OFF</span></h1>
         @if ($producto->calificacion->calificacion == 5)
           <h3>★★★★★</h3>
         @elseif ($producto->calificacion->calificacion == 4)
@@ -121,16 +122,16 @@
         @elseif ($producto->calificacion->calificacion == 1)
           <h3>★</h3>
         @endif
-        <h4>{{$producto->oferta->oferta}}% OFF</h4>
         <div class="categoriasubcategoria">
-          <a href="{{$producto->categoria->id}}"><p>Categoria:{{$producto->categoria->categoria}}</p></a>
-          <a href="{{$producto->subcategoria->id}}"><p>Subcategoria:{{$producto->subcategoria->subcategoria}}</p></a>
+          <a href="/categoria/{{$producto->categoria->id}}"><p>Categoria: <span>{{$producto->categoria->categoria}}</span></p></a>
+          <a href="/subcategoria/{{$producto->subcategoria->id}}"><p>Subcategoria: <span>{{$producto->subcategoria->subcategoria}}</span></p></a>
         </div>
 
+        <div class="imagenesyseccioncarrito">
         <div class="imagenes">
           <ul>
-            <li><img src="/storage/productos/{{$producto->imagen}}" alt="" ></li>
-            <li>
+            <li class="imagengrande"><img src="/storage/productos/{{$producto->imagen}}" alt="" ></li>
+            <li class="miniimagenes">
               <ul>
               <li><img src="/storage/productos/{{$producto->imagen2}}" alt=""></li>
               <li><img src="/storage/productos/{{$producto->imagen3}}" alt=""></li>
@@ -142,13 +143,19 @@
             </li>
           </ul>
         </div>
-        <ul>
-          <li></li>
-          <li>{{$producto->precio}}</li>
-          <li>{{$producto->cuota}}</li>
-          <li>Descripcion {{$producto->titulo}}: {{$producto->descripcion}}</li>
-          <li>Marca del Producto: {{$producto->marca->marca}}</li>
-        </ul>
+
+        <div class="seccioncarrito">
+          <ul>
+            <li><p>Precio <span>${{$producto->precio}}</span></p></li>
+            <li><p>{{$producto->cuota}} Cuotas</p></li>
+            <li class="botoncarrito"><a href="/carrito/"><p>Agregar Al Carrito</p></a></li>
+          </ul>
+        </div>
+        </div>
+
+        <div class="descripcioncompleta">
+          <p><strong>{{$producto->titulo}}</strong>: {{$producto->descripcion}}</p>
+        </div>
       </article>
     </section>
   </div>

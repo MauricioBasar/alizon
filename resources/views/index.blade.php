@@ -94,7 +94,7 @@
     <ul>
       @foreach ($sliderultimosproductos as $slider7)
         <li>
-          <a href="#">
+          <a href="/producto/{{$slider7->id}}">
           <h1>{{$slider7->titulo}}</h1>
           <img src="/storage/productos/{{$slider7->imagen}}" alt="">
           <h2>{{$slider7->cuota}} CUOTAS SIN INTERÉS</h2>

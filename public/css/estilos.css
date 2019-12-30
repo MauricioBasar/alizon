@@ -85,6 +85,30 @@ a{
   border: solid 1px white;
   border-radius: 5px;
   padding: 2%;
+  position: relative;
+  background: #09001f66;
+}
+
+.articulos section .marca{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  width: 15%;
+  border-bottom: solid 1px white;
+  border-right: solid 1px white;
+  border-radius: 5px;
+  background: #5d1616;
+  padding: 1% 1%;
+}
+
+.articulos section .marca span{
+  color: #00bcd4;
 }
 
 .articulos section article{
@@ -93,26 +117,29 @@ a{
 }
 
 .articulos section article h1{
-  text-align: left;
+  text-align: center;
   color: white;
   font-weight: bold;
   font-size: 1.8em;
+  width: 50%;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.articulos section article h1 span{
+  color: #1ec105;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: bold;
 }
 
 .articulos section article h3{
-  text-align: left;
+  text-align: center;
   color: #fff126;
   font-weight: bold;
   font-size: 2.5em;
+  width: 50%;
 }
 
-.articulos section article h4{
-  text-align: left;
-  color: #fff126;
-  font-weight: bold;
-  font-size: 2.5em;
-  margin-top: 1%;
-}
+
 
 .articulos section article .categoriasubcategoria {
   display: flex;
@@ -133,11 +160,26 @@ a{
 
 .articulos section article .categoriasubcategoria a p{
   border: none;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: bold;
+}
+
+.articulos section article .categoriasubcategoria a p span{
+  color: #00bcd4;
+}
+
+.articulos section article .imagenesyseccioncarrito{
+  display: flex;
+}
+
+.articulos section article .imagenes{
+  width: 74%;
 }
 
 .articulos section article .imagenes ul{
   display: flex;
-  width: 80%;
+  width: 100%;
   border: solid 1px red;
   margin-left: 0;
   border-radius: 5px;
@@ -145,15 +187,15 @@ a{
   background: #0e0a09a6;
 }
 
-.articulos section article .imagenes ul li:first-child{
-  width: 130%;
+.articulos section article .imagenes .imagengrande{
+  width: 60%;
 }
 
-.articulos section article .imagenes ul li:nth-child(2){
-  width: 100%;
+.articulos section article .imagenes .miniimagenes{
+  width: 40%;
 }
 
-.articulos section article .imagenes ul li ul{
+.articulos section article .imagenes .miniimagenes ul{
   width: 100%;
   height: 50%;
   display: flex;
@@ -162,28 +204,73 @@ a{
   margin-bottom: 2%;
 }
 
-.articulos section article .imagenes ul li ul li:first-child{
+.articulos section article .imagenes .miniimagenes ul li:first-child{
   width: 100%;
 }
 
-.articulos section article .imagenes ul li ul li:nth-child(2){
+.articulos section article .imagenes .miniimagenes ul li:nth-child(2){
   width: 100%;
 }
 
-.articulos section article .imagenes ul li ul li:first-child img{
+.articulos section article .imagenes .miniimagenes ul li:first-child img{
+  width: 100%;
+  height: 90%;
+  margin-top: 8%;
+}
+
+.articulos section article .imagenes .miniimagenes ul li:nth-child(2) img{
+  width: 100%;
+  height: 90%;
+  margin-top: 8%;
+}
+
+.articulos section article .imagenes .imagengrande img{
   width: 100%;
 }
 
-.articulos section article .imagenes ul li ul li:nth-child(2) img{
-  width: 100%;
+.articulos section article .seccioncarrito{
+  width: 24%;
 }
 
-.articulos section article .imagenes ul li img{
+.articulos section article .seccioncarrito ul{
   width: 100%;
+  height: 100%;
+  border: solid 1px red;
+  border-radius: 5px;
+  padding: 5%;
+  background: #0e0a09a6;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 1.5em;
+  text-align: center;
 }
 
-.articulos section article a p{
+.articulos section article .seccioncarrito ul li:first-child{
+  text-shadow: 2px 3px 5px #000;
   border: solid 1px white;
+  border-radius: 3px;
+  padding: 2.5% 2%;
+  background: #093a02;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+.articulos section article .seccioncarrito ul li:first-child span{
+  color: #1ec105;
+}
+
+.articulos section article .descripcioncompleta{
+  width: 94%;
+  margin-top: 2%;
+  border: solid 1px #ffa500;
+  border-radius: 5px;
+  padding: 1.5%;
+  color: white;
+  font-size: 1.3em;
+  background: #10100fa3;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
 }
 
 /* WARNING: paginacion de laravel */

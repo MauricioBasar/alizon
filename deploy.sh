@@ -1,2 +1,1 @@
-php artisan migrate:fresh --force
-php artisan db:seed --class="DatabaseSeeder" --force
+php artisan migrate:fresh  --seed --force
